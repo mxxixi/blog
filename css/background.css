@@ -1,0 +1,83 @@
+/* 页脚透明 */
+#footer, #footer:before {
+  background: transparent!important
+}
+
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
+}
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+  background: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    }
+
+    /* 文章页背景 */
+.layout_post>#post {
+  /* 以下代表透明度为0.5 可以自行修改*/
+  background: rgba(255,255,255,.7);
+}
+​
+/* 所有页面背景 */
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+  /* 以下代表透明度为0.5 */
+  background: rgba(255,255,255,.7);
+}
+/* 主页所有文章页面背景 */
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+  /* 以下代表透明度为0.5 */
+  background: rgba(255,255,255,.7);
+}
+/*侧边栏页面*/
+#aside-content>.card-widget  {
+  background: rgba(255,255,255,.7);
+}
+#aside-content>.sticky_layout>.card-widget{
+  background: rgba(255,255,255,.7);
+}
+/*文章页面*/
+.layout>#post{
+  background: rgba(255,255,255,.7);
+}
+/*分类页面*/
+.layout>#page{
+    background: rgba(255,255,255,.7);
+}
+/*时间轴页面*/
+.layout>#archive{
+  background: rgba(255,255,255,.7);
+}
+
+/*移动端优化：去除归档、标签、最新文章、公告、、只保留网站统计*/
+
+@media screen and (max-width: 800px) {
+  #aside_content div:not(:last-child) {
+      display: none;
+      font-size: 13px;
+  }
+}
+
+
+#veditor {
+	background-image: url(https://oss.lixiaoxu.cn/xixi/84745ac48cd06d49711d6bc1c66b2d76c95a54901aed1-52Qs9Y.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: rgba(255, 255, 255, 0);
+	resize: vertical
+}
+
+#veditor:focus{
+	background-position-y: 200px;
+	transition: all 0.2s ease-in-out 0s;
+}
+

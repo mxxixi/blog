@@ -1,0 +1,1209 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title> Java基础语法 | 夕夕</title><meta name="keywords" content="JAVA,JAVA基础"><meta name="author" content="夕夕"><meta name="copyright" content="夕夕"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="第2章 Java基础语法2.1 注释（annotation）（掌握） 注释：就是对代码的解释和说明。其目的是让人们能够更加轻松地了解代码。为代码添加注释，是十分必须要的，它不影响程序的编译和运行。  Java中有 单行注释、多行注释和 文档注释  单行注释以 &#x2F;&#x2F;开头，以 换行结束，格式如下： 1&#x2F;&#x2F; 注释内容 多行注释以 &#x2F;*开头，以 *&#x2F;结束，格式如下： 123&#x2F;*	注释内容 *&#x2F; 文档注释以">
+<meta property="og:type" content="article">
+<meta property="og:title" content=" Java基础语法">
+<meta property="og:url" content="https://imxixi.cn/2022/04/20/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:site_name" content="夕夕">
+<meta property="og:description" content="第2章 Java基础语法2.1 注释（annotation）（掌握） 注释：就是对代码的解释和说明。其目的是让人们能够更加轻松地了解代码。为代码添加注释，是十分必须要的，它不影响程序的编译和运行。  Java中有 单行注释、多行注释和 文档注释  单行注释以 &#x2F;&#x2F;开头，以 换行结束，格式如下： 1&#x2F;&#x2F; 注释内容 多行注释以 &#x2F;*开头，以 *&#x2F;结束，格式如下： 123&#x2F;*	注释内容 *&#x2F; 文档注释以">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg">
+<meta property="article:published_time" content="2022-04-19T16:00:01.000Z">
+<meta property="article:modified_time" content="2022-09-03T02:09:55.311Z">
+<meta property="article:author" content="夕夕">
+<meta property="article:tag" content="JAVA">
+<meta property="article:tag" content="JAVA基础">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg"><link rel="shortcut icon" href="https://oss.lixiaoxu.cn/xixi/v2-786c6a8d9919f64f99f3c9ac06fa3776_r.jpg"><link rel="canonical" href="https://imxixi.cn/2022/04/20/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: ' Java基础语法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2022-09-03 10:09:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet"  href="/css/font.css"><link rel="stylesheet"  href="/css/background.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://pic.imgdb.cn/item/622c6d7d5baa1a80ab8d483a.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/show/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fa-solid fa-book-quran"></i><span> 书籍</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chishenme.xyz/"><i class="fa-fw fas fa-concierge-bell"></i><span> 中午吃什么</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-dog"></i><span> 狗粮</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://lixiaoxu.cn/mx/"><i class="fa-fw fa fa-ban"></i><span> 禁止偷看</span></a></li><li><a class="site-page child" href="/love1/"><i class="fa-fw fa-solid fa-camera"></i><span> 欢乐谷之旅</span></a></li><li><a class="site-page child" href="/love2/"><i class="fa-fw fa-solid fa-camera"></i><span> 桂林之旅</span></a></li><li><a class="site-page child" href="/love3/"><i class="fa-fw fa-solid fa-camera"></i><span> 平凡日常</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">夕夕</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-graduation-cap"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/show/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 影视</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fa-solid fa-book-quran"></i><span> 书籍</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于笔者</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="http://chishenme.xyz/"><i class="fa-fw fas fa-concierge-bell"></i><span> 中午吃什么</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-dog"></i><span> 狗粮</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://lixiaoxu.cn/mx/"><i class="fa-fw fa fa-ban"></i><span> 禁止偷看</span></a></li><li><a class="site-page child" href="/love1/"><i class="fa-fw fa-solid fa-camera"></i><span> 欢乐谷之旅</span></a></li><li><a class="site-page child" href="/love2/"><i class="fa-fw fa-solid fa-camera"></i><span> 桂林之旅</span></a></li><li><a class="site-page child" href="/love3/"><i class="fa-fw fa-solid fa-camera"></i><span> 平凡日常</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title"> Java基础语法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-19T16:00:01.000Z" title="发表于 2022-04-20 00:00:01">2022-04-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-09-03T02:09:55.311Z" title="更新于 2022-09-03 10:09:55">2022-09-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">10.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>38分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=" Java基础语法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第2章-Java基础语法"><a href="#第2章-Java基础语法" class="headerlink" title="第2章 Java基础语法"></a>第2章 Java基础语法</h1><h2 id="2-1-注释（annotation）（掌握）"><a href="#2-1-注释（annotation）（掌握）" class="headerlink" title="2.1 注释（annotation）（掌握）"></a>2.1 注释（<em>annotation</em>）（掌握）</h2><ul>
+<li><p><strong>注释</strong>：就是对代码的解释和说明。其目的是让人们能够更加轻松地了解代码。为代码添加注释，是十分必须要的，它不影响程序的编译和运行。</p>
+</li>
+<li><p>Java中有 <code>单行注释</code>、<code>多行注释</code>和 <code>文档注释</code></p>
+<ul>
+<li><p>单行注释以 <code>//</code>开头，以 <code>换行</code>结束，格式如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 注释内容</span></span><br></pre></td></tr></table></figure></li>
+<li><p>多行注释以 <code>/*</code>开头，以 <code>*/</code>结束，格式如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	注释内容</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure></li>
+<li><p>文档注释以 <code>/**</code>开头，以 <code>*/</code>结束，Java特有的注释，结合</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">	注释内容</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//单行注释</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">文档注释演示</span></span><br><span class="line"><span class="comment"><span class="doctag">@author</span> chai</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Comments</span>&#123;</span><br><span class="line">  </span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	Java程序的入口</span></span><br><span class="line"><span class="comment">	<span class="doctag">@param</span> String[] args main方法的命令参数</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>常见的几个注释：</p>
+<ul>
+<li>@author 标明开发该类模块的作者，多个作者之间使用,分割</li>
+</ul>
+<ul>
+<li>@version 标明该类模块的版本</li>
+<li>@see 参考转向，也就是相关主题</li>
+<li>@since 从哪个版本开始增加的</li>
+<li>@param 对方法中某参数的说明，如果没有参数就不能写（后面再学）</li>
+<li>@return 对方法返回值的说明，如果方法的返回值类型是void就不能写（后面再学）</li>
+<li>@throws&#x2F;@exception 对方法可能抛出的异常进行说明 ，如果方法没有用throws显式抛出的异常就不能写（后面再学）</li>
+</ul>
+<p>其中 @param  @return 和 @exception 这三个标记都是只用于方法的。</p>
+<ul>
+<li>@param的格式要求：@param 形参名 形参类型  形参说明</li>
+<li>@return 的格式要求：@return 返回值类型 返回值说明</li>
+<li>@exception 的格式要求：@exception 异常类型 异常说明</li>
+<li>@param和@exception可以并列多个</li>
+</ul>
+<p>使用javadoc工具可以基于文档注释生成API文档。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用法: javadoc [options] [packagenames] [sourcefiles] [@files]</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javadoc -author -d doc Comments.java</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20211226163731907.png" alt="image-20211226163731907"></p>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20211226163802649.png" alt="image-20211226163802649"></p>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20211226163949641.png" alt="image-20211226163949641"></p>
+<h2 id="2-2-关键字（keyword）（掌握）"><a href="#2-2-关键字（keyword）（掌握）" class="headerlink" title="2.2 关键字（keyword）（掌握）"></a>2.2 关键字（<em>keyword</em>）（掌握）</h2><p><strong>关键字</strong>：是指在程序中，Java已经定义好的单词，具有特殊含义。</p>
+<ul>
+<li>HelloWorld案例中，出现的关键字有 <code>public </code> 、<code>class</code> 、 <code>static</code> 、  <code>void</code>  等，这些单词已经被Java定义好</li>
+<li>关键字的特点：全部都是 <code>小写字母</code>。</li>
+<li>关键字比较多，不需要死记硬背，学到哪里记到哪里即可。</li>
+</ul>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/%E5%85%B3%E9%94%AE%E5%AD%97%E8%A1%A8.png" alt="1555209180504"></p>
+<blockquote>
+<p><strong>关键字一共50个，其中const和goto是保留字。</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>true,false,null看起来像关键字，但从技术角度，它们是特殊的布尔值和空值。</strong></p>
+</blockquote>
+<h2 id="2-3-标识符-identifier-（掌握）"><a href="#2-3-标识符-identifier-（掌握）" class="headerlink" title="2.3 标识符( identifier)（掌握）"></a>2.3 标识符( identifier)（掌握）</h2><p>简单的说，凡是程序员自己命名的部分都可以称为标识符。</p>
+<p>即给类、变量、方法、包等命名的字符序列，称为标识符。</p>
+<p>1、标识符的命名规则（必须遵守的硬性规则）</p>
+<p>（1）Java的标识符只能使用26个英文字母大小写，0-9的数字，下划线_，美元符号$</p>
+<p>（2）不能使用Java的关键字（包含保留字）和特殊值</p>
+<p>（3）数字不能开头</p>
+<p>（4）不能包含空格</p>
+<p>（5）严格区分大小写</p>
+<p>2、标识符的命名规范（建议遵守的软性规则，否则容易被鄙视和淘汰）</p>
+<p>（1）见名知意</p>
+<p>（2）类名、接口名等：每个单词的首字母都大写，形式：XxxYyyZzz，</p>
+<p>例如：HelloWorld，String，System等</p>
+<p>（3）变量、方法名等：从第二个单词开始首字母大写，其余字母小写，形式：xxxYyyZzz，</p>
+<p>例如：age,name,bookName,main</p>
+<p>（4）包名等：每一个单词都小写，单词之间使用点.分割，形式：xxx.yyy.zzz，</p>
+<p>例如：java.lang</p>
+<p>（5）常量名等：每一个单词都大写，单词之间使用下划线_分割，形式：XXX_YYY_ZZZ，</p>
+<p>例如：MAX_VALUE,PI</p>
+<p>更多细节详见《代码整洁之道.pdf》《Java开发手册（泰山版）》</p>
+<h2 id="2-4-初识数据类型-data-type-（掌握）"><a href="#2-4-初识数据类型-data-type-（掌握）" class="headerlink" title="2.4 初识数据类型(data type)（掌握）"></a>2.4 初识数据类型(data type)（掌握）</h2><p>Java的数据类型分为两大类：</p>
+<ul>
+<li><strong>基本数据类型</strong>：包括 <code>整数</code>、<code>浮点数</code>、<code>字符</code>、<code>布尔</code>。</li>
+<li><strong>引用数据类型</strong>：包括 <code>数组</code>、 <code>类</code>、<code>接口</code>、<code>枚举</code>、<code>注解</code>。</li>
+</ul>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20210628142322228.png" alt="image-20210628142322228"></p>
+<h2 id="2-5-常量值（constant）（掌握）"><a href="#2-5-常量值（constant）（掌握）" class="headerlink" title="2.5 常量值（constant）（掌握）"></a>2.5 常量值（<em>constant</em>）（掌握）</h2><ul>
+<li><strong>常量值：在程序执行的过程中，其值不可以发生改变</strong></li>
+<li>常量值的分类：<table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">整数常量值</td>
+<td align="center">12，-23, 1567844444557L</td>
+</tr>
+<tr>
+<td align="center">浮点常量值</td>
+<td align="center">12.34F，12.34</td>
+</tr>
+<tr>
+<td align="center">字符常量值</td>
+<td align="center">‘a’，’0’，‘尚’</td>
+</tr>
+<tr>
+<td align="center">布尔常量值</td>
+<td align="center">true，false</td>
+</tr>
+<tr>
+<td align="center">字符串常量值</td>
+<td align="center">”HelloWorld“</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<ul>
+<li>整数常量值，超过int范围的必须加L或l（小写L）</li>
+<li>小数常量值，无论多少，不加F，就是double类型。要表示float类型，必须加F或f</li>
+<li>char常量值，必须使用单引号</li>
+<li>String字符串常量值，必须使用双引号</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">常量值：</span></span><br><span class="line"><span class="comment">	代码里面写死的，固定不变的。</span></span><br><span class="line"><span class="comment">	一目了然的值。</span></span><br><span class="line"><span class="comment">整数常量值：1	 或 1L</span></span><br><span class="line"><span class="comment">小数常量值：1.5	或 1.5F</span></span><br><span class="line"><span class="comment">单字符常量值：&#x27;a&#x27;</span></span><br><span class="line"><span class="comment">布尔型常量值：true,false</span></span><br><span class="line"><span class="comment">字符串常量值：&quot;hello&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ConstantValue</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		System.out.println(<span class="number">1</span>);<span class="comment">//识别为int</span></span><br><span class="line">		System.out.println(<span class="number">1L</span>);<span class="comment">//识别为long，数字后面加L或l</span></span><br><span class="line">		System.out.println(<span class="number">1.5</span>);<span class="comment">//识别为double</span></span><br><span class="line">		System.out.println(<span class="number">1.5F</span>);<span class="comment">//识别为float类型，数字后面加F或f</span></span><br><span class="line">		System.out.println(<span class="string">&#x27;a&#x27;</span>);<span class="comment">//识别为char类型，单引号</span></span><br><span class="line">		System.out.println(<span class="literal">true</span>);<span class="comment">//识别为boolean类型</span></span><br><span class="line">		System.out.println(<span class="literal">false</span>);<span class="comment">//识别为boolean类型</span></span><br><span class="line">		System.out.println(<span class="string">&quot;helloworld&quot;</span>);<span class="comment">//识别为String类型，双引号</span></span><br><span class="line">		System.out.println(<span class="string">&quot;1&quot;</span>);<span class="comment">//识别为String类型，双引号</span></span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-6-变量（掌握）"><a href="#2-6-变量（掌握）" class="headerlink" title="2.6 变量（掌握）"></a>2.6 变量（掌握）</h2><h3 id="2-6-1-变量的概念"><a href="#2-6-1-变量的概念" class="headerlink" title="2.6.1 变量的概念"></a>2.6.1 变量的概念</h3><p><strong>变量：在程序执行的过程中，其值可以发生改变的量</strong></p>
+<p>变量的作用：用来存储数据，代表内存的一块存储区域，这块内存中的值是可以改变的。</p>
+<h3 id="2-6-2-变量的声明"><a href="#2-6-2-变量的声明" class="headerlink" title="2.6.2 变量的声明"></a>2.6.2 变量的声明</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">数据类型  变量名;</span><br><span class="line">例如：</span><br><span class="line"><span class="comment">//存储一个整数类型的年龄</span></span><br><span class="line"><span class="type">int</span> age; </span><br><span class="line"></span><br><span class="line"><span class="comment">//存储一个小数类型的体重</span></span><br><span class="line"><span class="type">double</span> weight;</span><br><span class="line"></span><br><span class="line"><span class="comment">//存储一个单字符类型的性别 </span></span><br><span class="line"><span class="type">char</span> gender;</span><br><span class="line"></span><br><span class="line"><span class="comment">//存储一个布尔类型的婚姻状态</span></span><br><span class="line"><span class="type">boolean</span> marry;</span><br><span class="line"></span><br><span class="line"><span class="comment">//存储一个字符串类型的姓名</span></span><br><span class="line">String name;</span><br><span class="line"></span><br><span class="line"><span class="comment">//声明多个同类型的变量</span></span><br><span class="line"><span class="type">int</span> a,b,c; <span class="comment">//表示a,b,c三个变量都是int类型。</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意：变量的数据类型可以是基本数据类型，也可以是引用数据类型。</p>
+</blockquote>
+<h3 id="2-6-3-变量的赋值"><a href="#2-6-3-变量的赋值" class="headerlink" title="2.6.3 变量的赋值"></a>2.6.3 变量的赋值</h3><p>给变量赋值，就是把“值”存到该变量代表的内存空间中。</p>
+<p>1、变量赋值的语法格式</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">变量名 = 值;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>给变量赋值，变量名必须在&#x3D;左边，值必须在&#x3D;右边</li>
+<li>给变量赋的值类型必须与变量声明的类型一致或兼容（&lt;&#x3D;）</li>
+</ul>
+<p>2、可以使用合适类型的常量值给变量赋值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> <span class="number">18</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">weight</span> <span class="operator">=</span> <span class="number">44.4</span>;</span><br><span class="line"><span class="type">char</span> <span class="variable">gender</span> <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"><span class="type">boolean</span> <span class="variable">marry</span> <span class="operator">=</span> <span class="literal">true</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;柴林燕&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>long类型：如果赋值的常量整数超过int范围，那么需要在数字后面加L。</strong></p>
+<p><strong>float类型：如果赋值为常量小数，那么需要在小数后面加F。</strong></p>
+<p><strong>char类型：使用单引号’’</strong></p>
+<p><strong>String类型：使用双引号””</strong></p>
+<p>3、可以使用其他变量或者表达式给变量赋值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> m;</span><br><span class="line">      </span><br><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">z</span> <span class="operator">=</span> <span class="number">2</span> * x + y;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-6-4-变量值的输出"><a href="#2-6-4-变量值的输出" class="headerlink" title="2.6.4 变量值的输出"></a>2.6.4 变量值的输出</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//输出变量的值</span></span><br><span class="line">System.out.println(age);</span><br><span class="line"></span><br><span class="line"><span class="comment">//输出变量的值</span></span><br><span class="line">System.out.println(<span class="string">&quot;年龄：&quot;</span> + age);</span><br><span class="line">System.out.println(<span class="string">&quot;age：&quot;</span> + age);</span><br><span class="line">System.out.println(<span class="string">&quot;name&quot;</span> + name + <span class="string">&quot;,age = &quot;</span> + age + <span class="string">&quot;，gender = &quot;</span> + gender + <span class="string">&quot;,weight = &quot;</span> + weight + <span class="string">&quot;,marry = &quot;</span> + marry);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果()中有多项内容，那么必须使用 + 连接起来</p>
+<p>如果某些内容想要原样输出，就用””引起来，而要输出变量中的内容，则不要把变量名用””引起来</p>
+</blockquote>
+<h3 id="2-6-5-变量可以反复赋值"><a href="#2-6-5-变量可以反复赋值" class="headerlink" title="2.6.5 变量可以反复赋值"></a>2.6.5 变量可以反复赋值</h3><ul>
+<li>变量的第一次赋值称为初始化；</li>
+<li>变量的再赋值称为修改变量的值；</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先声明，后初始化</span></span><br><span class="line"><span class="type">char</span> gender;</span><br><span class="line">gender = <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//声明的同时初始化</span></span><br><span class="line"><span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> <span class="number">18</span>;</span><br><span class="line">System.out.println(<span class="string">&quot;age = &quot;</span> + age);<span class="comment">///age = 18</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//给变量重新赋值，修改age变量的值</span></span><br><span class="line">age = <span class="number">19</span>;</span><br><span class="line">System.out.println(<span class="string">&quot;age = &quot;</span> + age);<span class="comment">//age = 19</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-6-6-变量的三要素"><a href="#2-6-6-变量的三要素" class="headerlink" title="2.6.6 变量的三要素"></a>2.6.6 变量的三要素</h3><p>1、数据类型</p>
+<ul>
+<li>变量的数据类型决定了在内存中开辟多大空间</li>
+<li>变量的数据类型也决定了该变量可以存什么值</li>
+</ul>
+<p>2、变量名</p>
+<ul>
+<li>见名知意非常重要</li>
+<li>给这块内存区域赋值，例如：我们现在在”宏福科技园“，我们住的校区叫做”流星花园“</li>
+</ul>
+<p>3、值</p>
+<ul>
+<li>基本数据类型的变量：存储数据值</li>
+<li>引用数据类型的变量：存储地址值，即对象的首地址。例如：String类型的变量存储的是字符串对象的首地址（关于对象后面章节再详细讲解）</li>
+</ul>
+<h3 id="2-6-7-变量的使用应该注意什么？"><a href="#2-6-7-变量的使用应该注意什么？" class="headerlink" title="2.6.7 变量的使用应该注意什么？"></a>2.6.7 变量的使用应该注意什么？</h3><p>1、先声明后使用</p>
+<blockquote>
+<p>如果没有声明，会报“找不到符号”错误</p>
+</blockquote>
+<p>2、在使用之前必须初始化</p>
+<blockquote>
+<p>如果没有初始化，会报“未初始化”错误</p>
+</blockquote>
+<p>3、变量有作用域</p>
+<blockquote>
+<p>如果超过作用域，也会报“找不到符号”错误</p>
+</blockquote>
+<p>4、在同一个作用域中不能重名</p>
+<p>5、变量值的类型必须与变量声明的类型一致或兼容（&lt;&#x3D;）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">一致：一样</span><br><span class="line"><span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> <span class="number">18</span>;  <span class="number">18</span>是<span class="type">int</span>类型的常量值，age也是<span class="type">int</span>类型</span><br><span class="line"><span class="type">int</span> = <span class="type">int</span></span><br><span class="line">  </span><br><span class="line">兼容：可以装的下，=右边的值要 小于等于 =左边的变量类型</span><br><span class="line"><span class="type">long</span> <span class="variable">bigNum</span> <span class="operator">=</span><span class="number">18</span>; <span class="number">18</span>是<span class="type">int</span>类型的常量值，bigNum是<span class="type">long</span>类型</span><br><span class="line"><span class="type">int</span> &lt; <span class="type">long</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> <span class="number">18L</span>; 错误  <span class="number">18L</span>是<span class="type">long</span>类型的常量值，age是<span class="type">int</span>类型</span><br><span class="line"><span class="type">long</span> &gt; <span class="type">int</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-6-8-练习"><a href="#2-6-8-练习" class="headerlink" title="2.6.8 练习"></a>2.6.8 练习</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">4、用合适类型的变量存储个人信息并输出</span></span><br><span class="line"><span class="comment">存储自己的姓名、年龄、性别、体重、婚姻状况</span></span><br><span class="line"><span class="comment">（已婚用true表示，单身用false表示）等等</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyInfo</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		<span class="comment">//存储姓名用String类型</span></span><br><span class="line">		<span class="comment">//=左边是变量名，右边是常量值，给变量赋值</span></span><br><span class="line">		<span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> <span class="string">&quot;柴林燕&quot;</span>;</span><br><span class="line"></span><br><span class="line">		System.out.println(<span class="string">&quot;name&quot;</span>);<span class="comment">//原样显示字符串常量值&quot;name&quot;</span></span><br><span class="line">		System.out.println(name);<span class="comment">//把变量name中的值输出</span></span><br><span class="line">	</span><br><span class="line">		<span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> <span class="number">18</span>;</span><br><span class="line">		<span class="type">char</span> <span class="variable">gender</span> <span class="operator">=</span> <span class="string">&#x27;女&#x27;</span>;</span><br><span class="line">		<span class="type">double</span> <span class="variable">weight</span> <span class="operator">=</span> <span class="number">42.5</span>;</span><br><span class="line">		<span class="type">boolean</span> <span class="variable">marry</span> <span class="operator">=</span> <span class="literal">true</span>;</span><br><span class="line">		System.out.println(age);</span><br><span class="line">		System.out.println(gender);</span><br><span class="line">		System.out.println(weight);</span><br><span class="line">		System.out.println(marry);</span><br><span class="line">	</span><br><span class="line">		System.out.println(<span class="string">&quot;----------------&quot;</span>);</span><br><span class="line">		<span class="comment">// + 表示拼接，把&quot;姓名：&quot;字符串常量 和name字符串变量的值，拼接起来，构成一个字符串值</span></span><br><span class="line">		System.out.println(<span class="string">&quot;姓名：&quot;</span> + name);</span><br><span class="line">		System.out.println(<span class="string">&quot;name=&quot;</span> + name);</span><br><span class="line">		<span class="comment">//System.out.println(&quot;姓名：&quot;,name);//错误</span></span><br><span class="line">      </span><br><span class="line">        System.out.println(<span class="string">&quot;----------------&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;name&quot;</span> + name + <span class="string">&quot;,age = &quot;</span> + age + <span class="string">&quot;，gender = &quot;</span> + gender + <span class="string">&quot;,weight = &quot;</span> + weight + <span class="string">&quot;,marry = &quot;</span> + marry);</span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-7-最终变量-x2F-常量（final）"><a href="#2-7-最终变量-x2F-常量（final）" class="headerlink" title="2.7 最终变量&#x2F;常量（final）"></a>2.7 最终变量&#x2F;常量（final）</h2><p>最终变量习惯上也称为常量，因为它是通过在声明变量的数据类型前面加final的方式实现的，所以叫最终变量。加final修饰后，这个变量的值就不能修改了，一开始赋值多少，就是多少，所以此时的变量名通常称为常量名。常量名通常所有字母都大写，每一个单词之间使用下划线分割，从命名上和变量名区分开来。</p>
+<p>这样做的好处，就是可以见名知意，便于维护。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">FinalVariableDemo</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="comment">//定义常量</span></span><br><span class="line">        <span class="keyword">final</span> <span class="type">int</span> <span class="variable">FULL_MARK</span> <span class="operator">=</span> <span class="number">100</span>;<span class="comment">//满分</span></span><br><span class="line">       <span class="comment">// FULL_MARK = 150;//错误，final修饰的变量，是常量，不能重新赋值</span></span><br><span class="line">      </span><br><span class="line">        <span class="comment">//输出常量值</span></span><br><span class="line">        System.out.println(<span class="string">&quot;满分：&quot;</span> + FULL_MARK);</span><br><span class="line">      </span><br><span class="line">        <span class="comment">//小王的成绩比满分少1分</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">wang</span> <span class="operator">=</span> FULL_MARK - <span class="number">1</span>;</span><br><span class="line">        <span class="comment">//小尚得了满分</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">shang</span> <span class="operator">=</span> FULL_MARK;</span><br><span class="line">        <span class="comment">//小刘得了一半分</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">liu</span> <span class="operator">=</span> FULL_MARK/<span class="number">2</span>;</span><br><span class="line">      </span><br><span class="line">        <span class="comment">//输出变量值</span></span><br><span class="line">        System.out.println(<span class="string">&quot;小王成绩：&quot;</span> + wang);</span><br><span class="line">        System.out.println(<span class="string">&quot;小尚成绩：&quot;</span> + shang);</span><br><span class="line">        System.out.println(<span class="string">&quot;小刘成绩：&quot;</span> + liu);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-8-计算机如何存储数据"><a href="#2-8-计算机如何存储数据" class="headerlink" title="2.8  计算机如何存储数据"></a>2.8  计算机如何存储数据</h2><p>计算机世界中只有二进制。那么在计算机中存储和运算的所有数据都要转为二进制。包括数字、字符、图片、声音、视频等。</p>
+<h3 id="2-8-1-进制（了解）"><a href="#2-8-1-进制（了解）" class="headerlink" title="2.8.1 进制（了解）"></a>2.8.1 进制（了解）</h3><h4 id="1、进制的分类"><a href="#1、进制的分类" class="headerlink" title="1、进制的分类"></a>1、进制的分类</h4><p>（1）十进制：<br>数字组成：0-9<br>进位规则：逢十进一</p>
+<p>（2）二进制：<br>数字组成：0-1<br>进位规则：逢二进一</p>
+<p>十进制的256，二进制：100000000，为了缩短二进制的表示，又要贴近二进制，在程序中引入八进制和十六进制</p>
+<p>（3）八进制：很少使用<br>数字组成：0-7<br>进位规则：逢八进一</p>
+<p>与二进制换算规则：每三位二进制是一位八进制值</p>
+<p>（4）十六进制<br>数字组成：0-9，a-f<br>进位规则：逢十六进一</p>
+<p>与二进制换算规则：每四位二进制是一位十六进制值</p>
+<h4 id="2、进制的换算"><a href="#2、进制的换算" class="headerlink" title="2、进制的换算"></a>2、进制的换算</h4><table>
+<thead>
+<tr>
+<th>十进制</th>
+<th>二进制</th>
+<th>八进制</th>
+<th>十六进制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>11</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>100</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>101</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>110</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>111</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1000</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1001</td>
+<td>11</td>
+<td>9</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1010</td>
+<td>12</td>
+<td>a或A</td>
+</tr>
+<tr>
+<td>11</td>
+<td>1011</td>
+<td>13</td>
+<td>b或B</td>
+</tr>
+<tr>
+<td>12</td>
+<td>1100</td>
+<td>14</td>
+<td>c或C</td>
+</tr>
+<tr>
+<td>13</td>
+<td>1101</td>
+<td>15</td>
+<td>d或D</td>
+</tr>
+<tr>
+<td>14</td>
+<td>1110</td>
+<td>16</td>
+<td>e或E</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1111</td>
+<td>17</td>
+<td>f或F</td>
+</tr>
+<tr>
+<td>16</td>
+<td>10000</td>
+<td>20</td>
+<td>10</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p><strong>十进制数据转成二进制数据：</strong>使用除以2倒取余数的方式<br><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6.jpg"></p>
+</li>
+<li><p><strong>二进制数据转成十进制数据：</strong></p>
+<p>从右边开始依次是2的0次，2的1次，2的2次。。。。</p>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B6.jpg"></p>
+</li>
+<li><p>二进制数据转八进制数据</p>
+<pre><code>从右边开始，三位一组
+</code></pre>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/2%E3%80%81%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%85%AB%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.png"></p>
+</li>
+<li><p>二进制数据转十六进制数据</p>
+<pre><code>从右边开始，四位一组
+</code></pre>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/3%E3%80%81%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.png"></p>
+</li>
+</ul>
+<h4 id="3、在代码中如何表示四种进制的常量值"><a href="#3、在代码中如何表示四种进制的常量值" class="headerlink" title="3、在代码中如何表示四种进制的常量值"></a>3、在代码中如何表示四种进制的常量值</h4><p>请分别用四种类型的进制来表示10，并输出它的结果：（了解）</p>
+<p>（1）十进制：正常表示</p>
+<p>System.out.println(10);</p>
+<p>（2）二进制：0b或0B开头</p>
+<p>System.out.println(0B10);</p>
+<p>（3）八进制：0开头</p>
+<p>System.out.println(010);</p>
+<p>（4）十六进制：0x或0X开头</p>
+<p>System.out.println(0X10);</p>
+<h3 id="2-8-2-计算机存储单位（掌握）"><a href="#2-8-2-计算机存储单位（掌握）" class="headerlink" title="2.8.2 计算机存储单位（掌握）"></a>2.8.2 计算机存储单位（掌握）</h3><ul>
+<li><p><strong>字节（Byte）：</strong>是计算机信息技术用于计量存储容量的一种计量单位，一字节等于八位。</p>
+</li>
+<li><p><strong>位（bit）：</strong>是数据存储的最小单位。也就是二进制。二进制数系统中，每个0或1就是一个位，叫做bit（比特），其中8 bit 就称为一个字节(Byte)。</p>
+</li>
+<li><p><strong>转换关系：</strong></p>
+<ul>
+<li>8 bit &#x3D; 1 Byte</li>
+<li>1024 Byte &#x3D; 1 KB</li>
+<li>1024 KB &#x3D; 1 MB</li>
+<li>1024 MB &#x3D; 1 GB</li>
+<li>1024 GB &#x3D; 1 TB</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-8-3-Java的基本数据类型的存储范围（掌握）"><a href="#2-8-3-Java的基本数据类型的存储范围（掌握）" class="headerlink" title="2.8.3 Java的基本数据类型的存储范围（掌握）"></a>2.8.3 Java的基本数据类型的存储范围（掌握）</h3><p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%8C%83%E5%9B%B4.jpg"></p>
+<p>float：单精度浮点型，占内存：4个字节，精度：科学记数法的小数点后6~7位</p>
+<p>double：双精度浮点型，占内存：8个字节，精度：科学记数法的小数点后15~16位</p>
+<h3 id="2-8-4-计算机如何表示数据（理解）"><a href="#2-8-4-计算机如何表示数据（理解）" class="headerlink" title="2.8.4 计算机如何表示数据（理解）"></a>2.8.4 计算机如何表示数据（理解）</h3><h4 id="1、如何表示boolean类型的值"><a href="#1、如何表示boolean类型的值" class="headerlink" title="1、如何表示boolean类型的值"></a>1、如何表示boolean类型的值</h4><p>true底层使用1表示。</p>
+<p>false底层使用0表示。</p>
+<h4 id="2、如何表示整数？"><a href="#2、如何表示整数？" class="headerlink" title="2、如何表示整数？"></a>2、如何表示整数？</h4><h5 id="原码、反码、补码与符号位概念"><a href="#原码、反码、补码与符号位概念" class="headerlink" title="原码、反码、补码与符号位概念"></a>原码、反码、补码与符号位概念</h5><p>计算机数据的存储使用二进制补码形式存储，并且最高位是符号位，最高位1是负数，最高位0是正数。</p>
+<p><em>规定：正数的补码与反码、原码一样，称为三码合一；</em></p>
+<pre><code>*负数的补码与反码、原码不一样：*
+
+*负数的原码：把十进制转为二进制，然后最高位设置为1*
+
+*负数的反码：在原码的基础上，最高位不变，其余位取反（0变1,1变0）*
+
+*负数的补码：反码+1*
+</code></pre>
+<p><em>例如：byte类型（1个字节，8位）</em></p>
+<p><em>25 &#x3D;&#x3D;&gt; 原码  0001 1001 &#x3D;&#x3D;&gt; 反码  0001 1001 –&gt;补码  0001 1001</em></p>
+<p><em>-25 &#x3D;&#x3D;&gt;原码  1001 1001 &#x3D;&#x3D;&gt; 反码1110 0110 &#x3D;&#x3D;&gt;补码 1110 0111</em></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">整数：</span><br><span class="line">正数：<span class="number">25</span>   <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">000000000</span> <span class="number">00011001</span>（原码）</span><br><span class="line">正数：<span class="number">25</span>   <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">000000000</span> <span class="number">00011001</span>（反码）</span><br><span class="line">正数：<span class="number">25</span>   <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">000000000</span> <span class="number">00011001</span>（补码）</span><br><span class="line"></span><br><span class="line">负数：-<span class="number">25</span>  <span class="number">10000000</span> <span class="number">00000000</span> <span class="number">000000000</span> <span class="number">00011001</span>（原码）</span><br><span class="line">负数：-<span class="number">25</span>  <span class="number">11111111</span> <span class="number">11111111</span> <span class="number">111111111</span> <span class="number">11100110</span>（反码）</span><br><span class="line">负数：-<span class="number">25</span>  <span class="number">11111111</span> <span class="number">11111111</span> <span class="number">111111111</span> <span class="number">11100111</span>（补码）</span><br></pre></td></tr></table></figure>
+
+<h5 id="一个字节可以存储的整数范围是多少？"><a href="#一个字节可以存储的整数范围是多少？" class="headerlink" title="一个字节可以存储的整数范围是多少？"></a>一个字节可以存储的整数范围是多少？</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>个字节：<span class="number">8</span>位</span><br><span class="line"></span><br><span class="line"><span class="number">0000</span> <span class="number">0001</span>  ~  <span class="number">0111</span> <span class="number">111</span> ==&gt; <span class="number">1</span>~<span class="number">127</span></span><br><span class="line"></span><br><span class="line"><span class="number">1000</span> <span class="number">0001</span> ~ <span class="number">1111</span> <span class="number">1111</span> ==&gt; -<span class="number">127</span> ~ -<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="number">0000</span> <span class="number">0000</span> ==&gt;<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="number">1000</span> <span class="number">0000</span> ==&gt; -<span class="number">128</span>（特殊规定）=-<span class="number">127</span>-<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3、如何表示小数？"><a href="#3、如何表示小数？" class="headerlink" title="3、如何表示小数？"></a>3、如何表示小数？</h4><p>了解小数如何存储是为了理解如下问题：</p>
+<ul>
+<li>为什么float（4个字节）比long（8个字节）的存储范围大？</li>
+<li>为什么float和double不精确？</li>
+<li>为什么double（8个字节）比float（4个字节）精度范围大？</li>
+</ul>
+<p>因为float、double底层也是二进制，先把小数转为二进制，然后把二进制表示为科学记数法，然后只保存：</p>
+<p>①符号位②指数位（需要移位）③尾数位</p>
+<blockquote>
+<p><em>详见《float型和double型数据的存储方式.docx》</em></p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">float</span>：符号位（<span class="number">1</span>位），指数位（<span class="number">8</span>位，偏移<span class="number">127</span>），尾数位（<span class="number">23</span>位）</span><br><span class="line"><span class="type">double</span>：符号位（<span class="number">1</span>位），指数位（<span class="number">11</span>位，偏移<span class="number">1023</span>），尾数为（<span class="number">52</span>位）</span><br><span class="line"><span class="type">float</span>指数-<span class="number">126</span>~+<span class="number">127</span></span><br><span class="line"><span class="type">double</span>指数-<span class="number">1022</span>~+<span class="number">1023</span></span><br><span class="line"></span><br><span class="line"><span class="type">float</span>类型</span><br><span class="line">小数：<span class="number">8.25</span> <span class="number">1000.01</span></span><br><span class="line">           <span class="number">1.00001</span>（科学计数法）</span><br><span class="line">		   符号位<span class="number">0</span>，指数位<span class="number">3</span>+<span class="number">127</span>（偏移量）=<span class="number">130</span>-&gt;<span class="number">10000010</span>，尾数<span class="number">00001</span></span><br><span class="line">		   <span class="number">0</span> <span class="number">10000010</span> <span class="number">00001000000000000000000</span>  原码</span><br><span class="line">		   <span class="number">0</span> <span class="number">10000010</span> <span class="number">00001000000000000000000</span>  反码</span><br><span class="line">		   <span class="number">0</span> <span class="number">10000010</span> <span class="number">00001000000000000000000</span>  补码</span><br><span class="line">		   </span><br><span class="line">小数：-<span class="number">8.25</span> -<span class="number">1000.01</span>（原码）</span><br><span class="line">		   <span class="number">1</span> <span class="number">10000010</span> <span class="number">00001000000000000000000</span>  原码</span><br><span class="line">		   <span class="number">1</span> <span class="number">01111101</span> <span class="number">11110111111111111111111</span>  反码</span><br><span class="line">		   <span class="number">1</span> <span class="number">01111101</span> <span class="number">11111000000000000000000</span>  补码</span><br><span class="line">		   </span><br><span class="line"><span class="type">double</span>类型：</span><br><span class="line">小数：<span class="number">8.25</span> <span class="number">1000.01</span></span><br><span class="line">           <span class="number">1.00001</span>（科学计数法）</span><br><span class="line">		   符号位<span class="number">0</span>，指数位<span class="number">3</span>+<span class="number">1023</span>（偏移量）=<span class="number">1026</span>-&gt;<span class="number">10000000010</span>，尾数<span class="number">00001</span></span><br><span class="line">		   <span class="number">0</span> <span class="number">10000000010</span>  <span class="number">0000</span> <span class="number">10000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> 原码</span><br><span class="line">		   <span class="number">0</span> <span class="number">10000000010</span>  <span class="number">0000</span> <span class="number">10000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> 反码</span><br><span class="line">		   <span class="number">0</span> <span class="number">10000000010</span>  <span class="number">0000</span> <span class="number">10000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> 补码</span><br><span class="line">		   </span><br><span class="line"><span class="type">double</span>类型：</span><br><span class="line">小数：-<span class="number">8.25</span> -<span class="number">1000.01</span>（原码）</span><br><span class="line">           <span class="number">1.00001</span>（科学计数法）</span><br><span class="line">		   符号位<span class="number">0</span>，指数位<span class="number">3</span>+<span class="number">1023</span>（偏移量）=<span class="number">1026</span>-&gt;<span class="number">10000000010</span>，尾数<span class="number">00001</span></span><br><span class="line">		   <span class="number">1</span> <span class="number">10000000010</span>  <span class="number">0000</span> <span class="number">10000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> 原码</span><br><span class="line">		   <span class="number">1</span> <span class="number">01111111101</span>  <span class="number">1111</span> <span class="number">01111111</span> <span class="number">11111111</span> <span class="number">11111111</span> <span class="number">11111111</span> <span class="number">11111111</span> <span class="number">11111111</span> 反码</span><br><span class="line">		   <span class="number">1</span> <span class="number">01111111101</span>  <span class="number">1111</span> <span class="number">10000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> <span class="number">00000000</span> 补码</span><br><span class="line">		   </span><br><span class="line">为什么<span class="type">float</span>类型指数位偏移<span class="number">127</span>，<span class="type">double</span>类型指数位偏移<span class="number">1023</span>。</span><br><span class="line">因为指数+<span class="number">3</span>，偏移<span class="number">127</span>就是<span class="number">130</span>		   </span><br><span class="line">因为指数-<span class="number">3</span>，偏移<span class="number">127</span>就是<span class="number">124</span></span><br><span class="line"><span class="number">130</span>&gt;<span class="number">124</span>，比较大小比较方便。</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20211217160508390.png" alt="image-20211217160508390"></p>
+<h4 id="4、Java程序中如何表示和处理单个字符？"><a href="#4、Java程序中如何表示和处理单个字符？" class="headerlink" title="4、Java程序中如何表示和处理单个字符？"></a>4、Java程序中如何表示和处理单个字符？</h4><p>（1）使用单引号将单个字符引起来：例如：’A’，’0’，’尚’</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> <span class="string">&#x27;尚&#x27;</span>;<span class="comment">//使用单引号</span></span><br><span class="line"><span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> <span class="string">&#x27;尚&#x27;</span>;<span class="comment">//错误的，哪怕是一个字符，也要使用双引号</span></span><br><span class="line">	</span><br><span class="line"><span class="type">char</span> <span class="variable">kongChar</span> <span class="operator">=</span> <span class="string">&#x27;&#x27;</span>;<span class="comment">//错误，单引号中有且只能有一个字符</span></span><br><span class="line"><span class="type">String</span> <span class="variable">kongStr</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;<span class="comment">//可以，双引号中可以没有其他字符，表示是空字符串</span></span><br></pre></td></tr></table></figure>
+
+<p>（2）特殊的转义字符</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\n：换行</span><br><span class="line">\r：回车</span><br><span class="line">\t：Tab键</span><br><span class="line">\\：\</span><br><span class="line">\<span class="string">&quot;：&quot;</span></span><br><span class="line">\<span class="string">&#x27;：&#x27;</span></span><br><span class="line">\b：删除键Backspace</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestEscapeCharacter</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello\tjava&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;hello\rjava&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;hello\njava&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;hello\\world&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;\&quot;hello\&quot;&quot;</span>);</span><br><span class="line">        <span class="type">char</span> <span class="variable">shuang</span> <span class="operator">=</span> <span class="string">&#x27;&quot;&#x27;</span>;</span><br><span class="line">        System.out.println(shuang + <span class="string">&quot;hello&quot;</span> + shuang);</span><br><span class="line">        System.out.println(<span class="string">&quot;&#x27;hello&#x27;&quot;</span>);</span><br><span class="line">        <span class="type">char</span> <span class="variable">dan</span> <span class="operator">=</span><span class="string">&#x27;\&#x27;&#x27;</span>;</span><br><span class="line">        System.out.println(dan + <span class="string">&quot;hello&quot;</span> + dan);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestTab</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello\tworld\tjava.&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;chailinyan\tis\tbeautiful.&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;姓名\t基本工资\t年龄&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;张三\t10000.0\t23&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（3）用十进制的0~65535之间的Unicode编码值，表示一个字符</p>
+<p>在JVM内存中，一个字符占2个字节，Java使用Unicode字符集来表示每一个字符，即每一个字符对应一个唯一的Unicode编码值。char类型的数值参与算术运算或比较大小时，都是用编码值进行计算的。</p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>Unicode编码值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>‘0’</td>
+<td>48</td>
+</tr>
+<tr>
+<td>‘1’</td>
+<td>49</td>
+</tr>
+<tr>
+<td>‘A’</td>
+<td>65</td>
+</tr>
+<tr>
+<td>‘B’</td>
+<td>66</td>
+</tr>
+<tr>
+<td>‘a’</td>
+<td>97</td>
+</tr>
+<tr>
+<td>‘b’</td>
+<td>98</td>
+</tr>
+<tr>
+<td>‘尚’</td>
+<td>23578</td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> <span class="variable">c1</span> <span class="operator">=</span> <span class="number">23578</span>;</span><br><span class="line">System.out.println(c1);<span class="comment">//尚</span></span><br><span class="line"></span><br><span class="line"><span class="type">char</span> <span class="variable">c2</span> <span class="operator">=</span> <span class="number">97</span>;</span><br><span class="line">System.out.println(c2);<span class="comment">//a</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//如何查看某个字符的Unicode编码？</span></span><br><span class="line"><span class="comment">//将一个字符赋值给int类型的变量即可</span></span><br><span class="line"><span class="type">int</span> <span class="variable">codeOfA</span> <span class="operator">=</span> <span class="string">&#x27;A&#x27;</span>;</span><br><span class="line">System.out.println(codeOfA);</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="variable">codeOfShang</span> <span class="operator">=</span> <span class="string">&#x27;尚&#x27;</span>;</span><br><span class="line">System.out.println(codeOfShang);</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="variable">codeOfTab</span> <span class="operator">=</span> <span class="string">&#x27;\t&#x27;</span>;</span><br><span class="line">System.out.println(codeOfTab);</span><br></pre></td></tr></table></figure>
+
+<p>（4）\u字符的Unicode编码值的十六进制型</p>
+<p>例如：’\u5c1a’代表’尚’</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> <span class="string">&#x27;\u0041&#x27;</span>; <span class="comment">//十进制Unicode值65，对应十六进制是41，但是\u后面必须写4位</span></span><br><span class="line"><span class="type">char</span> <span class="variable">c</span> <span class="operator">=</span> <span class="string">&#x27;\u5c1a&#x27;</span>; <span class="comment">//十进制Unicode值23578，对应十六进制是5c1a</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5、一个字符到底占几个字节？"><a href="#5、一个字符到底占几个字节？" class="headerlink" title="5、一个字符到底占几个字节？"></a>5、一个字符到底占几个字节？</h4><p>在JVM内存中，一个字符占2个字节，Java使用Unicode字符集来表示每一个字符，即每一个字符对应一个唯一的Unicode编码值。char类型的数值参与算术运算或比较大小时，都是用编码值进行计算的。</p>
+<p>在文件中保存或网络中传输时文本数据时，和环境编码有关。如果环境编码选择ISO8859-1（又名Latin），那么一个字符占一个字节；如果环境编码选择GBK，那么一个字符占1个或2个字节；如果环境编码选择UTF-8，那么一个字符占1-4个字节。（后面讲String类时再详细讲解）</p>
+<h2 id="2-9-基本数据类型转换（Conversion）（掌握）"><a href="#2-9-基本数据类型转换（Conversion）（掌握）" class="headerlink" title="2.9  基本数据类型转换（Conversion）（掌握）"></a>2.9  基本数据类型转换（Conversion）（掌握）</h2><p>在Java程序中，不同的基本数据类型的值经常需要进行相互转换。Java语言所提供的<strong>七种数值类型</strong>之间可以相互转换，基本数据类型转换有两种转换方式：自动类型转换和强制类型转换。<strong>boolean类型不参与。</strong></p>
+<h3 id="2-9-1-自动类型转换（隐式类型转换）"><a href="#2-9-1-自动类型转换（隐式类型转换）" class="headerlink" title="2.9.1 自动类型转换（隐式类型转换）"></a>2.9.1 自动类型转换（隐式类型转换）</h3><p><strong>自动转换</strong>：</p>
+<ul>
+<li>将 <code>取值范围小的类型</code>自动提升为 <code>取值范围大的类型</code> 。</li>
+</ul>
+<p>基本数据类型的转换规则如图所示：</p>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/%E8%87%AA%E5%8A%A8%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E5%9B%BE1.jpg"></p>
+<p>（1）当把存储范围小的值（常量值、变量的值、表达式计算的结果值）赋值给了存储范围大的变量时。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="string">&#x27;A&#x27;</span>;<span class="comment">//char自动升级为int，其实就是把字符的编码值赋值给i变量了</span></span><br><span class="line"><span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> <span class="number">10</span>;<span class="comment">//int自动升级为double</span></span><br><span class="line"></span><br><span class="line"><span class="type">byte</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">127</span>; <span class="comment">//右边的整数常量值必须在-128~127范围内</span></span><br><span class="line"><span class="comment">//byte bigB = 130;//错误，右边的整数常量值超过byte范围</span></span><br><span class="line"><span class="type">long</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">1234567</span>; <span class="comment">//右边的整数常量值如果在int范围呢，编译和运行都可以通过，这里涉及到数据类型转换</span></span><br><span class="line"><span class="type">long</span> <span class="variable">bigNum</span> <span class="operator">=</span> <span class="number">12345678912L</span>;<span class="comment">//右边的整数常量值如果超过int范围，必须加L，否则编译不通过</span></span><br></pre></td></tr></table></figure>
+
+<p>（2）当存储范围小的数据类型与存储范围大的数据类型一起混合运算时，会按照其中最大的类型运算。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> <span class="number">1.0</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">double</span> <span class="variable">sum</span> <span class="operator">=</span> i + b + d;<span class="comment">//混合运算，升级为double</span></span><br></pre></td></tr></table></figure>
+
+<p>（3）当byte,short,char数据类型进行算术运算时，按照int类型处理。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">byte</span> <span class="variable">b1</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b2</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b3</span> <span class="operator">=</span> b1 + b2;<span class="comment">//编译报错，b1 + b2自动升级为int</span></span><br><span class="line"></span><br><span class="line"><span class="type">char</span> <span class="variable">c1</span> <span class="operator">=</span> <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line"><span class="type">char</span> <span class="variable">c2</span> <span class="operator">=</span> <span class="string">&#x27;A&#x27;</span>;</span><br><span class="line">System.out.println(c1 + c2);<span class="comment">//113 </span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-9-2-强制类型转换（显示类型转换）"><a href="#2-9-2-强制类型转换（显示类型转换）" class="headerlink" title="2.9.2 强制类型转换（显示类型转换）"></a>2.9.2 强制类型转换（显示类型转换）</h3><p>将 <code>1.5</code> 赋值到 <code>int</code> 类型变量会发生什么？产生编译失败，肯定无法赋值。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">3.14</span>; <span class="comment">// 错误</span></span><br></pre></td></tr></table></figure>
+
+<p>想要赋值成功，只有通过强制类型转换，将 <code>double</code> 类型强制转换成 <code>int</code> 类型才能赋值。</p>
+<ul>
+<li><strong>强制类型转换</strong>：将 <code>取值范围大的类型</code>强制转换成 <code>取值范围小的类型</code>。</li>
+</ul>
+<p> 比较而言，自动转换是Java自动执行的，而强制转换需要我们自己手动执行。</p>
+<p><strong>转换格式：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">数据类型 变量名 = （数据类型）被强转数据值;  <span class="comment">//()中的数据类型必须&lt;=变量的数据类型，一般都是=</span></span><br></pre></td></tr></table></figure>
+
+<p>（1）当把存储范围大的值（常量值、变量的值、表达式计算的结果值）赋值给了存储范围小的变量时，需要强制类型转换，提示：有风险，可能会损失精度或溢出</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> (<span class="type">int</span>)<span class="number">3.14</span>;<span class="comment">//强制类型转换，损失精度</span></span><br><span class="line"></span><br><span class="line"><span class="type">double</span> <span class="variable">d</span> <span class="operator">=</span> <span class="number">1.2</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> (<span class="type">int</span>)d;<span class="comment">//损失精度</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">200</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b</span> <span class="operator">=</span> (<span class="type">byte</span>)i;<span class="comment">//溢出</span></span><br></pre></td></tr></table></figure>
+
+<p>（2）当某个值想要提升数据类型时，也可以使用强制类型转换</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line"><span class="type">double</span> <span class="variable">shang</span> <span class="operator">=</span> (<span class="type">double</span>)i/j;</span><br></pre></td></tr></table></figure>
+
+<p>提示：这个情况的强制类型转换是没有风险的。</p>
+<h3 id="2-9-3-基本数据类型与字符串类型的转换"><a href="#2-9-3-基本数据类型与字符串类型的转换" class="headerlink" title="2.9.3 基本数据类型与字符串类型的转换"></a>2.9.3 基本数据类型与字符串类型的转换</h3><p>1、任意数据类型的数据与String类型进行“+”运算时，结果一定是String类型</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;&quot;</span> + <span class="number">1</span> + <span class="number">2</span>);<span class="comment">//12</span></span><br></pre></td></tr></table></figure>
+
+<p>2、但是String类型不能通过强制类型()转换，转为其他的类型</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;123&quot;</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> (<span class="type">int</span>)str;<span class="comment">//错误的</span></span><br><span class="line"><span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> Integer.parseInt(str);<span class="comment">//后面才能讲到，借助包装类的方法才能转</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-10-运算符（Operator）和标点符号（Separators）（掌握）"><a href="#2-10-运算符（Operator）和标点符号（Separators）（掌握）" class="headerlink" title="2.10 运算符（Operator）和标点符号（Separators）（掌握）"></a>2.10 运算符（Operator）和标点符号（Separators）（掌握）</h2><p>在Java中，一共有38个运算符。</p>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20210701164724830.png" alt="image-20210701164724830"></p>
+<p>运算符的分类：</p>
+<ul>
+<li>按照功能分：算术运算符、赋值运算符、比较运算符、逻辑运算、条件运算符、Lambda运算符</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">分类</th>
+<th align="center">运算符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">算术运算符（7个）</td>
+<td align="center">+、-、*、&#x2F;、%、++、–</td>
+</tr>
+<tr>
+<td align="center">赋值运算符（12个）</td>
+<td align="center">&#x3D;、+&#x3D;、-&#x3D;、*&#x3D;、&#x2F;&#x3D;、%&#x3D;、&gt;&gt;&#x3D;、&lt;&lt;&#x3D;、&gt;&gt;&gt;&#x3D;、&amp;&#x3D;、|&#x3D;、^&#x3D;等</td>
+</tr>
+<tr>
+<td align="center">关系运算符（6个）</td>
+<td align="center">&gt;、&gt;&#x3D;、&lt;、&lt;&#x3D;、&#x3D;&#x3D;、!&#x3D;</td>
+</tr>
+<tr>
+<td align="center">逻辑运算符（6个）</td>
+<td align="center">&amp;、|、^、!、&amp;&amp;、||</td>
+</tr>
+<tr>
+<td align="center">条件运算符（2个）</td>
+<td align="center">(条件表达式)?结果1:结果2</td>
+</tr>
+<tr>
+<td align="center">位运算符（7个）</td>
+<td align="center">&amp;、|、^、~、&lt;&lt;、&gt;&gt;、&gt;&gt;&gt;</td>
+</tr>
+<tr>
+<td align="center">Lambda运算符（1个）</td>
+<td align="center">-&gt;（后面学）</td>
+</tr>
+</tbody></table>
+<ul>
+<li>按照操作数个数分：一元运算符（单目运算符）、二元运算符（双目运算符）、三元运算符 （三目运算符）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">分类</th>
+<th align="center">运算符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">一元运算符（单目运算符）</td>
+<td align="center">正号（+）、负号（-）、++、–、!、~</td>
+</tr>
+<tr>
+<td align="center">二元运算符（双目运算符）</td>
+<td align="center">除了一元和三元运算符剩下的都是二元运算符</td>
+</tr>
+<tr>
+<td align="center">三元运算符 （三目运算符）</td>
+<td align="center">(条件表达式)?结果1:结果2</td>
+</tr>
+</tbody></table>
+<h3 id="2-10-1-算术运算符"><a href="#2-10-1-算术运算符" class="headerlink" title="2.10.1 算术运算符"></a>2.10.1 算术运算符</h3><table>
+<thead>
+<tr>
+<th align="center">算术运算符</th>
+<th align="center">符号解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>+</code></td>
+<td align="center">加法运算，字符串连接运算，正号</td>
+</tr>
+<tr>
+<td align="center"><code>-</code></td>
+<td align="center">减法运算，负号</td>
+</tr>
+<tr>
+<td align="center"><code>*</code></td>
+<td align="center">乘法运算</td>
+</tr>
+<tr>
+<td align="center"><code>/</code></td>
+<td align="center">除法运算，整数&#x2F;整数结果还是整数</td>
+</tr>
+<tr>
+<td align="center"><code>%</code></td>
+<td align="center">求余运算，余数的符号只看被除数</td>
+</tr>
+<tr>
+<td align="center"><code>++</code> 、  <code>--</code></td>
+<td align="center">自增自减运算</td>
+</tr>
+</tbody></table>
+<h4 id="1、加减乘除模"><a href="#1、加减乘除模" class="headerlink" title="1、加减乘除模"></a>1、加减乘除模</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperatorDemo01</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">4</span>;</span><br><span class="line">	</span><br><span class="line">		System.out.println(a + b);<span class="comment">// 7</span></span><br><span class="line">		System.out.println(a - b);<span class="comment">// -1</span></span><br><span class="line">		System.out.println(a * b);<span class="comment">// 12</span></span><br><span class="line">		System.out.println(a / b);<span class="comment">// 计算机结果是0，为什么不是0.75呢？ 整数/整数结果还是整数</span></span><br><span class="line">		System.out.println(a % b);<span class="comment">// 3</span></span><br><span class="line">      </span><br><span class="line">      </span><br><span class="line">        <span class="comment">//余数的符号只看被除数</span></span><br><span class="line">        System.out.println(<span class="number">5</span>%<span class="number">2</span>);<span class="comment">//1</span></span><br><span class="line">		System.out.println(<span class="number">5</span>%-<span class="number">2</span>);<span class="comment">//1</span></span><br><span class="line">		System.out.println(-<span class="number">5</span>%<span class="number">2</span>);<span class="comment">//-1</span></span><br><span class="line">		System.out.println(-<span class="number">5</span>%-<span class="number">2</span>);<span class="comment">//-1</span></span><br><span class="line">		<span class="comment">//商*除数 + 余数 = 被除数</span></span><br><span class="line">		<span class="comment">//5%-2  ==&gt;商是-2，余数时1    (-2)*(-2)+1 = 5</span></span><br><span class="line">		<span class="comment">//-5%2  ==&gt;商是-2，余数是-1   (-2)*2+(-1) = -4-1=-5</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、“-”号的两种用法"><a href="#2、“-”号的两种用法" class="headerlink" title="2、“+”号的两种用法"></a>2、“+”号的两种用法</h4><ul>
+<li>第一种：对于 <code>+</code>两边都是数值的话，<code>+</code>就是加法的意思</li>
+<li>第二种：对于 <code>+</code>两边至少有一边是字符串得话，<code>+</code>就是拼接的意思</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperatorDemo02</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="comment">// 字符串类型的变量基本使用</span></span><br><span class="line">		<span class="comment">// 数据类型 变量名称 = 数据值;</span></span><br><span class="line">		<span class="type">String</span> <span class="variable">str1</span> <span class="operator">=</span> <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">		System.out.println(str1); <span class="comment">// Hello</span></span><br><span class="line">	</span><br><span class="line">		System.out.println(<span class="string">&quot;Hello&quot;</span> + <span class="string">&quot;World&quot;</span>); <span class="comment">// HelloWorld</span></span><br><span class="line">	</span><br><span class="line">		<span class="type">String</span> <span class="variable">str2</span> <span class="operator">=</span> <span class="string">&quot;Java&quot;</span>;</span><br><span class="line">		<span class="comment">// String + int --&gt; String</span></span><br><span class="line">		System.out.println(str2 + <span class="number">520</span>); <span class="comment">// Java520</span></span><br><span class="line">		<span class="comment">// String + int + int</span></span><br><span class="line">		<span class="comment">// String		+ int</span></span><br><span class="line">		<span class="comment">// String</span></span><br><span class="line">		System.out.println(str2 + <span class="number">5</span> + <span class="number">20</span>); <span class="comment">// Java520</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3、自加自减运算"><a href="#3、自加自减运算" class="headerlink" title="3、自加自减运算"></a>3、自加自减运算</h4><p><strong>理解：</strong><code>++</code>  <strong>运算，变量自己的值加1</strong>。反之，<code>--</code> 运算，变量自己的值减少1，用法与 <code>++</code> 一致。</p>
+<p>1、单独使用</p>
+<ul>
+<li>变量在单独运算的时候，变量 <code>前++</code>和变量 <code>后++</code>，变量的是一样的；</li>
+<li>变量 <code>前++</code>   ：例如 <code>++a</code> 。</li>
+<li>变量 <code>后++</code>   ：例如 <code>a++</code> 。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperatorDemo3</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="comment">// 定义一个int类型的变量a</span></span><br><span class="line">		<span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="comment">//++a;</span></span><br><span class="line">		a++;</span><br><span class="line">        <span class="comment">// 无论是变量前++还是变量后++，结果都是4</span></span><br><span class="line">		System.out.println(a);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2、复合使用</p>
+<ul>
+<li>和 <code>其他变量放在一起使用</code>或者和 <code>输出语句放在一起使用</code>，<code>前++</code>和 <code>后++</code>就产生了不同。</li>
+</ul>
+<ul>
+<li>变量 <code>前++</code> ：变量先自身加1，然后再取值。</li>
+<li>变量 <code>后++</code> ：变量先取值，然后再自身加1。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperatorDemo03</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="comment">// 其他变量放在一起使用</span></span><br><span class="line">		<span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="comment">//int y = ++x; // y的值是4，x的值是4，</span></span><br><span class="line">		<span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> x++; <span class="comment">// y的值是3，x的值是4</span></span><br><span class="line">	</span><br><span class="line">		System.out.println(x);</span><br><span class="line">		System.out.println(y);</span><br><span class="line">		System.out.println(<span class="string">&quot;==========&quot;</span>);</span><br><span class="line">      </span><br><span class="line">		<span class="comment">// 和输出语句一起</span></span><br><span class="line">		<span class="type">int</span> <span class="variable">z</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line">		<span class="comment">//System.out.println(++z);// 输出结果是6，z的值也是6</span></span><br><span class="line">		System.out.println(z++);<span class="comment">// 输出结果是5，z的值是6</span></span><br><span class="line">		System.out.println(z);</span><br><span class="line">      </span><br><span class="line">        <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        a = a++;<span class="comment">//(1)先取a的值“1”放操作数栈(2)a再自增,a=2(3)再把操作数栈中的&quot;1&quot;赋值给a,a=1</span></span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i++ + ++i * i++;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        从左往右加载</span></span><br><span class="line"><span class="comment">        (1)先算i++</span></span><br><span class="line"><span class="comment">        ①取i的值“1”放操作数栈</span></span><br><span class="line"><span class="comment">        ②i再自增 i=2</span></span><br><span class="line"><span class="comment">        （2）再算++i</span></span><br><span class="line"><span class="comment">        ①i先自增 i=3</span></span><br><span class="line"><span class="comment">        ②再取i的值“3”放操作数栈</span></span><br><span class="line"><span class="comment">        （3）再算i++</span></span><br><span class="line"><span class="comment">        ①取i的值“3”放操作数栈</span></span><br><span class="line"><span class="comment">        ②i再自增 i=4</span></span><br><span class="line"><span class="comment">        （4）先算乘法</span></span><br><span class="line"><span class="comment">        用操作数栈中3 * 3 = 9，并把9压会操作数栈</span></span><br><span class="line"><span class="comment">        （5）再算求和</span></span><br><span class="line"><span class="comment">        用操作数栈中的 1 + 9 = 10</span></span><br><span class="line"><span class="comment">        （6）最后算赋值</span></span><br><span class="line"><span class="comment">        j = 10</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>小结：<ul>
+<li><strong>++在前，先自加，后使用；</strong></li>
+<li><strong>++在后，先使用，后自加。</strong></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>分析</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestIncrementOperator1</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">		i++;</span><br><span class="line">		++i;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20211217171149646.png" alt="image-20211217171149646"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestIncrementOperator2</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">		i = i++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20211217171321005.png" alt="image-20211217171321005"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestIncrementOperator3</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">		i = ++i;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20211217171420955.png" alt="image-20211217171420955"></p>
+<h3 id="2-10-2-关系运算符-x2F-比较运算符"><a href="#2-10-2-关系运算符-x2F-比较运算符" class="headerlink" title="2.10.2 关系运算符&#x2F;比较运算符"></a>2.10.2 关系运算符&#x2F;比较运算符</h3><table>
+<thead>
+<tr>
+<th align="center">关系运算符</th>
+<th align="center">符号解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>&lt;</code></td>
+<td align="center">比较符号左边的数据是否小于右边的数据，如果小于结果是true。</td>
+</tr>
+<tr>
+<td align="center"><code>&gt;</code></td>
+<td align="center">比较符号左边的数据是否大于右边的数据，如果大于结果是true。</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;=</code></td>
+<td align="center">比较符号左边的数据是否小于或者等于右边的数据，如果大于结果是false。</td>
+</tr>
+<tr>
+<td align="center"><code>&gt;=</code></td>
+<td align="center">比较符号左边的数据是否大于或者等于右边的数据，如果小于结果是false。</td>
+</tr>
+<tr>
+<td align="center"><code>==</code></td>
+<td align="center">比较符号两边数据是否相等，相等结果是true。</td>
+</tr>
+<tr>
+<td align="center"><code>！=</code></td>
+<td align="center">不等于符号 ，如果符号两边的数据不相等，结果是true。</td>
+</tr>
+</tbody></table>
+<ul>
+<li>比较运算符，是两个数据之间进行比较的运算，运算结果一定是boolean值 <code>true</code>或者 <code>false</code> 。</li>
+<li>其中&gt;,&lt;,&gt;&#x3D;,&lt;&#x3D;不支持boolean，String类型，&#x3D;&#x3D;和!&#x3D;支持boolean和String。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperatorDemo05</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">4</span>;</span><br><span class="line"></span><br><span class="line">		System.out.println(a &lt; b); <span class="comment">// true</span></span><br><span class="line">		System.out.println(a &gt; b); <span class="comment">// false</span></span><br><span class="line">		System.out.println(a &lt;= b); <span class="comment">// true</span></span><br><span class="line">		System.out.println(a &gt;= b); <span class="comment">// false</span></span><br><span class="line">		System.out.println(a == b); <span class="comment">// false</span></span><br><span class="line">		System.out.println(a != b); <span class="comment">// true</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-10-3-逻辑运算符"><a href="#2-10-3-逻辑运算符" class="headerlink" title="2.10.3 逻辑运算符"></a>2.10.3 逻辑运算符</h3><ul>
+<li>逻辑运算符，是用来连接两个布尔类型结果的运算符（<code>!</code>除外），运算结果一定是boolean值 <code>true</code>或者 <code>false</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">逻辑运算符</th>
+<th align="center">符号解释</th>
+<th align="center">符号特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>&amp;</code></td>
+<td align="center">与，且</td>
+<td align="center">有 <code>false</code>则 <code>false</code></td>
+</tr>
+<tr>
+<td align="center">&#96;</td>
+<td align="center">&#96;</td>
+<td align="center">或</td>
+</tr>
+<tr>
+<td align="center"><code>^</code></td>
+<td align="center">异或</td>
+<td align="center">相同为 <code>false</code>，不同为 <code>true</code></td>
+</tr>
+<tr>
+<td align="center"><code>!</code></td>
+<td align="center">非</td>
+<td align="center">非 <code>false</code>则 <code>true</code>，非 <code>true</code>则 <code>false</code></td>
+</tr>
+<tr>
+<td align="center"><code>&amp;&amp;</code></td>
+<td align="center">双与，短路与</td>
+<td align="center">左边为false，则右边就不看</td>
+</tr>
+<tr>
+<td align="center">&#96;</td>
+<td align="center"></td>
+<td align="center">&#96;</td>
+</tr>
+</tbody></table>
+<p>&amp;&amp;和&amp;区别，||和|区别：</p>
+<ul>
+<li>**<code>&amp;&amp;</code>和 <code>&amp;</code>**区别：<ul>
+<li><code>&amp;&amp;</code>和 <code>&amp;</code>结果一样，<code>&amp;&amp;</code>有短路效果，左边为false，右边不执行；<code>&amp;</code>左边无论是什么，右边都会执行。</li>
+</ul>
+</li>
+<li>**<code>||</code>和 <code>|</code>**区别：<ul>
+<li><code>||</code>和 <code>|</code>结果一样，<code>||</code>有短路效果，左边为true，右边不执行；<code>|</code>左边无论是什么，右边都会执行。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperatorDemo06</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">4</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">c</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// &amp; 与，且；有false则false</span></span><br><span class="line">		System.out.println((a &gt; b) &amp; (a &gt; c)); </span><br><span class="line">		System.out.println((a &gt; b) &amp; (a &lt; c)); </span><br><span class="line">		System.out.println((a &lt; b) &amp; (a &gt; c)); </span><br><span class="line">		System.out.println((a &lt; b) &amp; (a &lt; c)); </span><br><span class="line">		System.out.println(<span class="string">&quot;===============&quot;</span>);</span><br><span class="line">		<span class="comment">// | 或；有true则true</span></span><br><span class="line">		System.out.println((a &gt; b) | (a &gt; c)); </span><br><span class="line">		System.out.println((a &gt; b) | (a &lt; c)); </span><br><span class="line">		System.out.println((a &lt; b) | (a &gt; c));</span><br><span class="line">		System.out.println((a &lt; b) | (a &lt; c));</span><br><span class="line">		System.out.println(<span class="string">&quot;===============&quot;</span>);</span><br><span class="line">		<span class="comment">// ^ 异或；相同为false，不同为true</span></span><br><span class="line">		System.out.println((a &gt; b) ^ (a &gt; c));</span><br><span class="line">		System.out.println((a &gt; b) ^ (a &lt; c)); </span><br><span class="line">		System.out.println((a &lt; b) ^ (a &gt; c)); </span><br><span class="line">		System.out.println((a &lt; b) ^ (a &lt; c)); </span><br><span class="line">		System.out.println(<span class="string">&quot;===============&quot;</span>);</span><br><span class="line">		<span class="comment">// ! 非；非false则true，非true则false</span></span><br><span class="line">		System.out.println(!<span class="literal">false</span>);</span><br><span class="line">		System.out.println(!<span class="literal">true</span>);</span><br><span class="line">      </span><br><span class="line">        <span class="comment">//&amp;和&amp;&amp;的区别</span></span><br><span class="line">        System.out.println((a &gt; b) &amp; (a++ &gt; c)); </span><br><span class="line">        System.out.println(<span class="string">&quot;a = &quot;</span> + a);</span><br><span class="line">        System.out.println((a &gt; b) &amp;&amp; (a++ &gt; c)); </span><br><span class="line">        System.out.println(<span class="string">&quot;a = &quot;</span> + a);</span><br><span class="line">        System.out.println((a == b) &amp;&amp; (a++ &gt; c)); </span><br><span class="line">        System.out.println(<span class="string">&quot;a = &quot;</span> + a);</span><br><span class="line">      </span><br><span class="line">        <span class="comment">//|和||的区别</span></span><br><span class="line">        System.out.println((a &gt; b) | (a++ &gt; c)); </span><br><span class="line">        System.out.println(<span class="string">&quot;a = &quot;</span> + a);</span><br><span class="line">        System.out.println((a &gt; b) || (a++ &gt; c)); </span><br><span class="line">        System.out.println(<span class="string">&quot;a = &quot;</span> + a);</span><br><span class="line">        System.out.println((a == b) || (a++ &gt; c)); </span><br><span class="line">        System.out.println(<span class="string">&quot;a = &quot;</span> + a);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">3、逻辑运算符</span></span><br><span class="line"><span class="comment">逻辑与：&amp;</span></span><br><span class="line"><span class="comment">	true &amp; true 结果是true</span></span><br><span class="line"><span class="comment">	true &amp; false 结果是false</span></span><br><span class="line"><span class="comment">	false &amp; true 结果是false</span></span><br><span class="line"><span class="comment">	false &amp; false 结果是false</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">	只有两个边都是true，结果才为true。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">逻辑或：|</span></span><br><span class="line"><span class="comment">	true | true 结果是true</span></span><br><span class="line"><span class="comment">	true | false 结果是true</span></span><br><span class="line"><span class="comment">	false | true 结果是true</span></span><br><span class="line"><span class="comment">	false | false 结果是false</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">	只要有一边是true，结果就为true。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">逻辑非：!</span></span><br><span class="line"><span class="comment">	!true  变为false</span></span><br><span class="line"><span class="comment">	!false 变为true</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">逻辑异或：^</span></span><br><span class="line"><span class="comment">	true | true 结果是false</span></span><br><span class="line"><span class="comment">	true | false 结果是true</span></span><br><span class="line"><span class="comment">	false | true 结果是true</span></span><br><span class="line"><span class="comment">	false | false 结果是false</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">	只有两边不一样，一个是true，一个是false，结果才为true。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">短路与：&amp;&amp;</span></span><br><span class="line"><span class="comment">	true &amp;&amp; true 结果是true</span></span><br><span class="line"><span class="comment">	true &amp;&amp; false 结果是false</span></span><br><span class="line"><span class="comment">	false &amp;&amp; ? 结果是false</span></span><br><span class="line"><span class="comment">	false &amp;&amp; ? 结果是false</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">	只有两个边都是true，结果才为true。</span></span><br><span class="line"><span class="comment">	但是它如果左边已经是false，右边不看。这样的好处就是可以提高效率。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">短路或：||</span></span><br><span class="line"><span class="comment">	true || ？ 结果是true</span></span><br><span class="line"><span class="comment">	true || ？ 结果是true</span></span><br><span class="line"><span class="comment">	false || true 结果是true</span></span><br><span class="line"><span class="comment">	false || false 结果是false</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">	只要有一边是true，结果就为true。</span></span><br><span class="line"><span class="comment">	但是它如果左边已经是true，右边就不看了。这样的好处就是可以提高效率。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">特殊：</span></span><br><span class="line"><span class="comment">（1）逻辑运算符的操作数必须是boolean值</span></span><br><span class="line"><span class="comment">（2）逻辑运算符的结果也是boolean值</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">LogicOperator</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		<span class="comment">/*</span></span><br><span class="line"><span class="comment">		表示条件，成绩必须在[0,100]之间</span></span><br><span class="line"><span class="comment">		成绩是int类型变量score</span></span><br><span class="line"><span class="comment">		*/</span></span><br><span class="line">		<span class="type">int</span> <span class="variable">score</span> <span class="operator">=</span> <span class="number">56</span>;</span><br><span class="line">	</span><br><span class="line">		<span class="comment">//System.out.println(0&lt;=score&lt;=100);</span></span><br><span class="line">		<span class="comment">/*</span></span><br><span class="line"><span class="comment">		LogicOperator.java:23: 错误: 二元运算符 &#x27;&lt;=&#x27; 的操作数类型错误</span></span><br><span class="line"><span class="comment">                System.out.println(0&lt;=score&lt;=100);</span></span><br><span class="line"><span class="comment">                                           ^</span></span><br><span class="line"><span class="comment">		  第一个类型:  boolean    0&lt;=score的结果 true</span></span><br><span class="line"><span class="comment">		  第二个类型: int</span></span><br><span class="line"><span class="comment">		  </span></span><br><span class="line"><span class="comment">		  true &lt;= 100？不对的</span></span><br><span class="line"><span class="comment">		1 个错误*/</span></span><br><span class="line">	</span><br><span class="line">		System.out.println(<span class="number">0</span>&lt;=score  &amp; score&lt;=<span class="number">100</span>);</span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-10-4-条件运算符"><a href="#2-10-4-条件运算符" class="headerlink" title="2.10.4 条件运算符"></a>2.10.4 条件运算符</h3><ul>
+<li>条件运算符格式：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">条件表达式？结果<span class="number">1</span>：结果<span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>条件运算符计算方式：<ul>
+<li>条件判断的结果是true，条件运算符整体结果为结果1，赋值给变量。</li>
+<li>判断条件的结果是false，条件运算符整体结果为结果2，赋值给变量。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ConditionOperator</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">		<span class="comment">//判断两个变量a,b谁大，把大的变量赋值给max</span></span><br><span class="line">		<span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">2</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> a &gt;= b ? a : b;</span><br><span class="line">		<span class="comment">//如果a&gt;=b成立，就取a的值赋给max，否则取b的值赋给max</span></span><br><span class="line">		System.out.println(max);</span><br><span class="line">	</span><br><span class="line">		<span class="type">boolean</span> <span class="variable">marry</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line">		System.out.println(marry ? <span class="string">&quot;已婚&quot;</span> : <span class="string">&quot;未婚&quot;</span>  );</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-10-5-位运算符"><a href="#2-10-5-位运算符" class="headerlink" title="2.10.5  位运算符"></a>2.10.5  位运算符</h3><table>
+<thead>
+<tr>
+<th align="center">位运算符</th>
+<th align="center">符号解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>&amp;</code></td>
+<td align="center">按位与，当两位相同时为1时才返回1</td>
+</tr>
+<tr>
+<td align="center">&#96;</td>
+<td align="center">&#96;</td>
+</tr>
+<tr>
+<td align="center"><code>~</code></td>
+<td align="center">按位非，将操作数的每个位（包括符号位）全部取反</td>
+</tr>
+<tr>
+<td align="center"><code>^</code></td>
+<td align="center">按位异或。当两位相同时返回0，不同时返回1</td>
+</tr>
+<tr>
+<td align="center"><code>&lt;&lt;</code></td>
+<td align="center">左移运算符</td>
+</tr>
+<tr>
+<td align="center"><code>&gt;&gt;</code></td>
+<td align="center">右移运算符</td>
+</tr>
+<tr>
+<td align="center"><code>&gt;&gt;&gt;</code></td>
+<td align="center">无符号右移运算符</td>
+</tr>
+</tbody></table>
+<ul>
+<li>位运算符的运算过程都是基于补码运算，但是看结果，我们得换成原码，再换成十进制看结果</li>
+<li>从二进制到十进制都是基于原码</li>
+<li>正数的原码反码补码都一样，负数原码反码补码不一样</li>
+<li>byte,short,char在计算时按照int类型处理</li>
+</ul>
+<blockquote>
+<p>如何区分&amp;,|,^是逻辑运算符还是位运算符？</p>
+<p>如果操作数是boolean类型，就是逻辑运算符，如果操作数是整数，那么就位运算符。</p>
+</blockquote>
+<h4 id="（1）左移：-lt-lt"><a href="#（1）左移：-lt-lt" class="headerlink" title="（1）左移：&lt;&lt;"></a>（1）左移：&lt;&lt;</h4><pre><code>运算规则：左移几位就相当于乘以2的几次方
+
+**注意：**当左移的位数n超过该数据类型的总位数时，相当于左移（n-总位数）位
+
+byte,short,char在计算时按照int类型处理
+</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span>&lt;&lt;<span class="number">4</span>  类似于  <span class="number">3</span>*<span class="number">2</span>的<span class="number">4</span>次= <span class="number">3</span>*<span class="number">16</span> = <span class="number">48</span></span><br></pre></td></tr></table></figure>
+
+<p>  <img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225113651675.png" alt="image-20200225113651675"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-<span class="number">3</span>&lt;&lt;<span class="number">4</span>  类似于  -<span class="number">3</span>*<span class="number">2</span>的<span class="number">4</span>次= -<span class="number">3</span>*<span class="number">16</span> = -<span class="number">48</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225114707524.png" alt="image-20200225114707524"></p>
+<h4 id="（2）右移：-gt-gt"><a href="#（2）右移：-gt-gt" class="headerlink" title="（2）右移：&gt;&gt;"></a>（2）右移：&gt;&gt;</h4><p>快速运算：类似于除以2的n次，如果不能整除，<strong>向下取整</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">69</span>&gt;&gt;<span class="number">4</span>  类似于  <span class="number">69</span>/<span class="number">2</span>的<span class="number">4</span>次 = <span class="number">69</span>/<span class="number">16</span> =<span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225115636844.png" alt="image-20200225115636844"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-69&gt;&gt;4  类似于  -69/2的4次 = -69/16 = -5</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225120112188.png" alt="image-20200225120112188"></p>
+<h4 id="（3）无符号右移：-gt-gt-gt"><a href="#（3）无符号右移：-gt-gt-gt" class="headerlink" title="（3）无符号右移：&gt;&gt;&gt;"></a>（3）无符号右移：&gt;&gt;&gt;</h4><p>运算规则：往右移动后，左边空出来的位直接补0，不看符号位</p>
+<p>正数：和右移一样</p>
+<p>负数：右边移出去几位，左边补几个0，结果变为正数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">69&gt;&gt;&gt;4  类似于  69/2的4次 = 69/16 =4</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225121104734.png" alt="image-20200225121104734"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-69&gt;&gt;&gt;4   结果：268435451</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225121244290.png" alt="image-20200225121244290"></p>
+<h4 id="（4）按位与：-amp"><a href="#（4）按位与：-amp" class="headerlink" title="（4）按位与：&amp;"></a>（4）按位与：&amp;</h4><p>运算规则：对应位都是1才为1</p>
+<pre><code>1 &amp; 1 结果为1
+
+1 &amp; 0 结果为0
+
+0 &amp; 1 结果为0
+
+0 &amp; 0 结果为0
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9&amp;7 = 1</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225122440953.png" alt="image-20200225122440953"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-9&amp;7 = 7</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225122221616.png" alt="image-20200225122221616"></p>
+<h4 id="（5）按位或："><a href="#（5）按位或：" class="headerlink" title="（5）按位或：|"></a>（5）按位或：|</h4><p>运算规则：对应位只要有1即为1</p>
+<pre><code>1 | 1 结果为1
+
+1 | 0 结果为1
+
+0 | 1 结果为1
+
+0 &amp; 0 结果为0
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9|7  结果： 15</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225122758851.png" alt="image-20200225122758851"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-9|7 结果： -9</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225123409130.png" alt="image-20200225123409130"></p>
+<h4 id="（6）按位异或："><a href="#（6）按位异或：" class="headerlink" title="（6）按位异或：^"></a>（6）按位异或：^</h4><pre><code>运算规则：对应位一个为1一个为0，才为1
+
+1 ^ 1 结果为0
+
+1 ^ 0 结果为1
+
+0 ^ 1 结果为1
+
+0 ^ 0 结果为0
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9^7  结果为14</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225123445305.png" alt="image-20200225123445305"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-9^7 结果为-16</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225133145727.png" alt="image-20200225133145727"></p>
+<h4 id="（7）按位取反："><a href="#（7）按位取反：" class="headerlink" title="（7）按位取反：~"></a>（7）按位取反：~</h4><p>运算规则：~0就是1</p>
+<pre><code>~1就是0
+</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~<span class="number">9</span>  结果：-<span class="number">10</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225124112662.png" alt="image-20200225124112662"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~-<span class="number">9</span>  结果：<span class="number">8</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20200225124156862.png" alt="image-20200225124156862"></p>
+<h3 id="2-10-6-赋值运算符"><a href="#2-10-6-赋值运算符" class="headerlink" title="2.10.6 赋值运算符"></a>2.10.6 赋值运算符</h3><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">符号解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&#x3D;</td>
+<td align="center">将右边的常量值&#x2F;变量值&#x2F;表达式的值，赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">+&#x3D;</td>
+<td align="center">将左边变量的值和右边的常量值&#x2F;变量值&#x2F;表达式的值进行相加，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">-&#x3D;</td>
+<td align="center">将左边变量的值和右边的常量值&#x2F;变量值&#x2F;表达式的值进行相减，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">*&#x3D;</td>
+<td align="center">将左边变量的值和右边的常量值&#x2F;变量值&#x2F;表达式的值进行相乘，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">&#x2F;&#x3D;</td>
+<td align="center">将左边变量的值和右边的常量值&#x2F;变量值&#x2F;表达式的值进行相除，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">%&#x3D;</td>
+<td align="center">将左边变量的值和右边的常量值&#x2F;变量值&#x2F;表达式的值进行相模，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">&lt;&lt;&#x3D;</td>
+<td align="center">将左边变量的值左移右边常量&#x2F;变量值&#x2F;表达式的值的相应位，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">&gt;&gt;&#x3D;</td>
+<td align="center">将左边变量的值右移右边常量&#x2F;变量值&#x2F;表达式的值的相应位，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">&gt;&gt;&gt;&#x3D;</td>
+<td align="center">将左边变量的值无符号右移右边常量&#x2F;变量值&#x2F;表达式的值的相应位，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">&amp;&#x3D;</td>
+<td align="center">将左边变量的值和右边的常量值&#x2F;变量值&#x2F;表达式的值进行按位与，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">|&#x3D;</td>
+<td align="center">将左边变量的值和右边的常量值&#x2F;变量值&#x2F;表达式的值进行按位或，最后将结果赋值给左边的变量</td>
+</tr>
+<tr>
+<td align="center">^&#x3D;</td>
+<td align="center">将左边变量的值和右边的常量值&#x2F;变量值&#x2F;表达式的值进行按位异或，最后将结果赋值给左边的变量</td>
+</tr>
+</tbody></table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperatorDemo04</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		<span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">4</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">c</span> <span class="operator">=</span> a + b;      </span><br><span class="line">      </span><br><span class="line">		b += a;<span class="comment">// 相当于 b = b + a ; </span></span><br><span class="line">		System.out.println(a); <span class="comment">// 3</span></span><br><span class="line">		System.out.println(b); <span class="comment">// 7</span></span><br><span class="line">        System.out.println(c); <span class="comment">//7</span></span><br><span class="line">	</span><br><span class="line">		<span class="type">short</span> <span class="variable">s</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">		<span class="comment">// s = s + 4; 代码编译报错，因为将int类型的结果赋值给short类型的变量s时，可能损失精度</span></span><br><span class="line">		s += <span class="number">4</span>; <span class="comment">// 代码没有报错</span></span><br><span class="line">        <span class="comment">//因为在得到int类型的结果后，JVM自动完成一步强制类型转换，将int类型强转成short</span></span><br><span class="line">		System.out.println(s);</span><br><span class="line">      </span><br><span class="line">        <span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">		j += ++j * j++;<span class="comment">//相当于  j = j + (++j * j++);</span></span><br><span class="line">		System.out.println(j);<span class="comment">//5</span></span><br><span class="line">      </span><br><span class="line">        <span class="type">int</span> <span class="variable">m</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        m &lt;&lt;= <span class="number">2</span>;</span><br><span class="line">        System.out.println(m);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>扩展赋值运算符在<strong>将最后的结果赋值给左边的变量前，多做了一步强制类型转换</strong>。</li>
+<li>注意：所有的赋值运算符的&#x3D;左边一定是一个变量</li>
+</ul>
+<h3 id="2-10-7-运算符优先级"><a href="#2-10-7-运算符优先级" class="headerlink" title="2.10.7 运算符优先级"></a>2.10.7 运算符优先级</h3><p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/1553858424335.png" alt="1553858424335"></p>
+<p>提示说明：</p>
+<p>（1）表达式不要太复杂</p>
+<p>（2）先算的使用()</p>
+<p>口诀：</p>
+<p>单目运算排第一；</p>
+<p>乘除余二加减三；</p>
+<p>移位四，关系五；</p>
+<p>等和不等排第六；</p>
+<p>位与、异或和位或；</p>
+<p>短路与和短路或；</p>
+<p>依次从七到十一；</p>
+<p>条件排在第十二；</p>
+<p>赋值一定是最后；</p>
+<h3 id="2-10-8-标点符号"><a href="#2-10-8-标点符号" class="headerlink" title="2.10.8 标点符号"></a>2.10.8 标点符号</h3><p>在Java中一共有12个标点符号。（后面再一一学习）</p>
+<p><img src="/img/%E5%B0%9A%E7%A1%85%E8%B0%B7-JavaSE%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0.assets/image-20210701170438577.png" alt="image-20210701170438577"></p>
+<ul>
+<li>小括号()用于强制类型转换、表示优先运算表达式、方法参数列表</li>
+<li>大括号{}用于数组元素列表、类体、方法体、复合语句代码块边界符</li>
+<li>中括号[]用于数组</li>
+<li>分号;用于结束语句</li>
+<li>逗号,用于多个赋值表达式的分隔符和方法参数列表分隔符</li>
+<li>英文句号.用于成员访问和包目录结构分隔符</li>
+<li>英文省略号…用于可变参数</li>
+<li>@用于注解</li>
+<li>双冒号::用于方法引用</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">夕夕</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://imxixi.cn/2022/04/20/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">https://imxixi.cn/2022/04/20/Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://imxixi.cn" target="_blank">夕夕</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JAVA/">JAVA</a><a class="post-meta__tags" href="/tags/JAVA%E5%9F%BA%E7%A1%80/">JAVA基础</a></div><div class="post_share"><div class="social-share" data-image="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://oss.lixiaoxu.cn/xixi/ea2b0c9e92acbf538e30616c17986da.jpg" target="_blank"><img class="post-qr-code-img" src="https://oss.lixiaoxu.cn/xixi/ea2b0c9e92acbf538e30616c17986da.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://oss.lixiaoxu.cn/xixi/11275afc4d1cf5503553cc117f75ad8.jpg" target="_blank"><img class="post-qr-code-img" src="https://oss.lixiaoxu.cn/xixi/11275afc4d1cf5503553cc117f75ad8.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/20/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5%E7%BB%93%E6%9E%84/"><img class="prev-cover" src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">流程控制语句结构</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/19/Java%E6%A6%82%E8%BF%B0/"><img class="next-cover" src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Java概述</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/04/20/Java8%E6%96%B0%E7%89%B9%E6%80%A7-/" title="Java8新特性"><img class="cover" src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-20</div><div class="title">Java8新特性</div></div></a></div><div><a href="/2022/04/20/File%E7%B1%BB%E4%B8%8EIO%E6%B5%81/" title="File类与IO流"><img class="cover" src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-20</div><div class="title">File类与IO流</div></div></a></div><div><a href="/2022/04/19/Java%E6%A6%82%E8%BF%B0/" title="Java概述"><img class="cover" src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-19</div><div class="title">Java概述</div></div></a></div><div><a href="/2022/04/20/%E5%8F%8D%E5%B0%84/" title="反射（Reflect）"><img class="cover" src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-20</div><div class="title">反射（Reflect）</div></div></a></div><div><a href="/2022/04/20/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="多线程"><img class="cover" src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-20</div><div class="title">多线程</div></div></a></div><div><a href="/2022/04/20/%E5%9F%BA%E7%A1%80API%E4%B8%8E%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95/" title="基础API与常见算法"><img class="cover" src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-20</div><div class="title">基础API与常见算法</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Gitalk</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://pic.imgdb.cn/item/622c6d7d5baa1a80ab8d483a.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">夕夕</div><div class="author-info__description">最美好的事是爱我的人都在身边</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/mxxixi"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://www.xiaohongshu.com/user/profile/5cf77a250000000025019e80" target="_blank" title="小红书"><i class="fa-solid fa-book"></i></a><a class="social-icon" href="mailto:mx.xi@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">网站正在建设中ing.... <img src="https://oss.lixiaoxu.cn/xixi/微信图片_20220901234558.gif" style="float:right"></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC2%E7%AB%A0-Java%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">第2章 Java基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E6%B3%A8%E9%87%8A%EF%BC%88annotation%EF%BC%89%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">2.1 注释（annotation）（掌握）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E5%85%B3%E9%94%AE%E5%AD%97%EF%BC%88keyword%EF%BC%89%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">2.2 关键字（keyword）（掌握）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E6%A0%87%E8%AF%86%E7%AC%A6-identifier-%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">2.3 标识符( identifier)（掌握）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-data-type-%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">2.4 初识数据类型(data type)（掌握）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-%E5%B8%B8%E9%87%8F%E5%80%BC%EF%BC%88constant%EF%BC%89%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">2.5 常量值（constant）（掌握）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-%E5%8F%98%E9%87%8F%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.6.</span> <span class="toc-text">2.6 变量（掌握）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-1-%E5%8F%98%E9%87%8F%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.6.1.</span> <span class="toc-text">2.6.1 变量的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-2-%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E"><span class="toc-number">1.6.2.</span> <span class="toc-text">2.6.2 变量的声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-3-%E5%8F%98%E9%87%8F%E7%9A%84%E8%B5%8B%E5%80%BC"><span class="toc-number">1.6.3.</span> <span class="toc-text">2.6.3 变量的赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-4-%E5%8F%98%E9%87%8F%E5%80%BC%E7%9A%84%E8%BE%93%E5%87%BA"><span class="toc-number">1.6.4.</span> <span class="toc-text">2.6.4 变量值的输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-5-%E5%8F%98%E9%87%8F%E5%8F%AF%E4%BB%A5%E5%8F%8D%E5%A4%8D%E8%B5%8B%E5%80%BC"><span class="toc-number">1.6.5.</span> <span class="toc-text">2.6.5 变量可以反复赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-6-%E5%8F%98%E9%87%8F%E7%9A%84%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="toc-number">1.6.6.</span> <span class="toc-text">2.6.6 变量的三要素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-7-%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BA%94%E8%AF%A5%E6%B3%A8%E6%84%8F%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.6.7.</span> <span class="toc-text">2.6.7 变量的使用应该注意什么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-8-%E7%BB%83%E4%B9%A0"><span class="toc-number">1.6.8.</span> <span class="toc-text">2.6.8 练习</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-7-%E6%9C%80%E7%BB%88%E5%8F%98%E9%87%8F-x2F-%E5%B8%B8%E9%87%8F%EF%BC%88final%EF%BC%89"><span class="toc-number">1.7.</span> <span class="toc-text">2.7 最终变量&#x2F;常量（final）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-8-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A6%82%E4%BD%95%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE"><span class="toc-number">1.8.</span> <span class="toc-text">2.8  计算机如何存储数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-1-%E8%BF%9B%E5%88%B6%EF%BC%88%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="toc-number">1.8.1.</span> <span class="toc-text">2.8.1 进制（了解）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%BF%9B%E5%88%B6%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">1.8.1.1.</span> <span class="toc-text">1、进制的分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E8%BF%9B%E5%88%B6%E7%9A%84%E6%8D%A2%E7%AE%97"><span class="toc-number">1.8.1.2.</span> <span class="toc-text">2、进制的换算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E5%9C%A8%E4%BB%A3%E7%A0%81%E4%B8%AD%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA%E5%9B%9B%E7%A7%8D%E8%BF%9B%E5%88%B6%E7%9A%84%E5%B8%B8%E9%87%8F%E5%80%BC"><span class="toc-number">1.8.1.3.</span> <span class="toc-text">3、在代码中如何表示四种进制的常量值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%98%E5%82%A8%E5%8D%95%E4%BD%8D%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.8.2.</span> <span class="toc-text">2.8.2 计算机存储单位（掌握）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-3-Java%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AD%98%E5%82%A8%E8%8C%83%E5%9B%B4%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.8.3.</span> <span class="toc-text">2.8.3 Java的基本数据类型的存储范围（掌握）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-4-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA%E6%95%B0%E6%8D%AE%EF%BC%88%E7%90%86%E8%A7%A3%EF%BC%89"><span class="toc-number">1.8.4.</span> <span class="toc-text">2.8.4 计算机如何表示数据（理解）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BAboolean%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%80%BC"><span class="toc-number">1.8.4.1.</span> <span class="toc-text">1、如何表示boolean类型的值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA%E6%95%B4%E6%95%B0%EF%BC%9F"><span class="toc-number">1.8.4.2.</span> <span class="toc-text">2、如何表示整数？</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8E%9F%E7%A0%81%E3%80%81%E5%8F%8D%E7%A0%81%E3%80%81%E8%A1%A5%E7%A0%81%E4%B8%8E%E7%AC%A6%E5%8F%B7%E4%BD%8D%E6%A6%82%E5%BF%B5"><span class="toc-number">1.8.4.2.1.</span> <span class="toc-text">原码、反码、补码与符号位概念</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E5%AD%97%E8%8A%82%E5%8F%AF%E4%BB%A5%E5%AD%98%E5%82%A8%E7%9A%84%E6%95%B4%E6%95%B0%E8%8C%83%E5%9B%B4%E6%98%AF%E5%A4%9A%E5%B0%91%EF%BC%9F"><span class="toc-number">1.8.4.2.2.</span> <span class="toc-text">一个字节可以存储的整数范围是多少？</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA%E5%B0%8F%E6%95%B0%EF%BC%9F"><span class="toc-number">1.8.4.3.</span> <span class="toc-text">3、如何表示小数？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81Java%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%A6%82%E4%BD%95%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%A4%84%E7%90%86%E5%8D%95%E4%B8%AA%E5%AD%97%E7%AC%A6%EF%BC%9F"><span class="toc-number">1.8.4.4.</span> <span class="toc-text">4、Java程序中如何表示和处理单个字符？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5%E3%80%81%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E5%88%B0%E5%BA%95%E5%8D%A0%E5%87%A0%E4%B8%AA%E5%AD%97%E8%8A%82%EF%BC%9F"><span class="toc-number">1.8.4.5.</span> <span class="toc-text">5、一个字符到底占几个字节？</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-9-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%EF%BC%88Conversion%EF%BC%89%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.9.</span> <span class="toc-text">2.9  基本数据类型转换（Conversion）（掌握）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9-1-%E8%87%AA%E5%8A%A8%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%EF%BC%88%E9%9A%90%E5%BC%8F%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%EF%BC%89"><span class="toc-number">1.9.1.</span> <span class="toc-text">2.9.1 自动类型转换（隐式类型转换）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9-2-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%EF%BC%88%E6%98%BE%E7%A4%BA%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%EF%BC%89"><span class="toc-number">1.9.2.</span> <span class="toc-text">2.9.2 强制类型转换（显示类型转换）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9-3-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.9.3.</span> <span class="toc-text">2.9.3 基本数据类型与字符串类型的转换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-10-%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88Operator%EF%BC%89%E5%92%8C%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7%EF%BC%88Separators%EF%BC%89%EF%BC%88%E6%8E%8C%E6%8F%A1%EF%BC%89"><span class="toc-number">1.10.</span> <span class="toc-text">2.10 运算符（Operator）和标点符号（Separators）（掌握）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-1-%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.10.1.</span> <span class="toc-text">2.10.1 算术运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4%E6%A8%A1"><span class="toc-number">1.10.1.1.</span> <span class="toc-text">1、加减乘除模</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E2%80%9C-%E2%80%9D%E5%8F%B7%E7%9A%84%E4%B8%A4%E7%A7%8D%E7%94%A8%E6%B3%95"><span class="toc-number">1.10.1.2.</span> <span class="toc-text">2、“+”号的两种用法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E8%87%AA%E5%8A%A0%E8%87%AA%E5%87%8F%E8%BF%90%E7%AE%97"><span class="toc-number">1.10.1.3.</span> <span class="toc-text">3、自加自减运算</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-2-%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6-x2F-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.10.2.</span> <span class="toc-text">2.10.2 关系运算符&#x2F;比较运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-3-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.10.3.</span> <span class="toc-text">2.10.3 逻辑运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-4-%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.10.4.</span> <span class="toc-text">2.10.4 条件运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-5-%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.10.5.</span> <span class="toc-text">2.10.5  位运算符</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%881%EF%BC%89%E5%B7%A6%E7%A7%BB%EF%BC%9A-lt-lt"><span class="toc-number">1.10.5.1.</span> <span class="toc-text">（1）左移：&lt;&lt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E5%8F%B3%E7%A7%BB%EF%BC%9A-gt-gt"><span class="toc-number">1.10.5.2.</span> <span class="toc-text">（2）右移：&gt;&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E6%97%A0%E7%AC%A6%E5%8F%B7%E5%8F%B3%E7%A7%BB%EF%BC%9A-gt-gt-gt"><span class="toc-number">1.10.5.3.</span> <span class="toc-text">（3）无符号右移：&gt;&gt;&gt;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E6%8C%89%E4%BD%8D%E4%B8%8E%EF%BC%9A-amp"><span class="toc-number">1.10.5.4.</span> <span class="toc-text">（4）按位与：&amp;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%885%EF%BC%89%E6%8C%89%E4%BD%8D%E6%88%96%EF%BC%9A"><span class="toc-number">1.10.5.5.</span> <span class="toc-text">（5）按位或：|</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%886%EF%BC%89%E6%8C%89%E4%BD%8D%E5%BC%82%E6%88%96%EF%BC%9A"><span class="toc-number">1.10.5.6.</span> <span class="toc-text">（6）按位异或：^</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%EF%BC%887%EF%BC%89%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D%EF%BC%9A"><span class="toc-number">1.10.5.7.</span> <span class="toc-text">（7）按位取反：~</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-6-%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.10.6.</span> <span class="toc-text">2.10.6 赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-7-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">1.10.7.</span> <span class="toc-text">2.10.7 运算符优先级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-8-%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7"><span class="toc-number">1.10.8.</span> <span class="toc-text">2.10.8 标点符号</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday06/" title="设计模式-day06"><img src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计模式-day06"/></a><div class="content"><a class="title" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday06/" title="设计模式-day06">设计模式-day06</a><time datetime="2022-06-27T09:56:59.000Z" title="发表于 2022-06-27 17:56:59">2022-06-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday05/" title="设计模式-day05"><img src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计模式-day05"/></a><div class="content"><a class="title" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday05/" title="设计模式-day05">设计模式-day05</a><time datetime="2022-06-27T09:56:58.000Z" title="发表于 2022-06-27 17:56:58">2022-06-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday04/" title="设计模式-day04"><img src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计模式-day04"/></a><div class="content"><a class="title" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday04/" title="设计模式-day04">设计模式-day04</a><time datetime="2022-06-27T09:56:57.000Z" title="发表于 2022-06-27 17:56:57">2022-06-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday03/" title="设计模式-day03"><img src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计模式-day03"/></a><div class="content"><a class="title" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday03/" title="设计模式-day03">设计模式-day03</a><time datetime="2022-06-27T09:56:56.000Z" title="发表于 2022-06-27 17:56:56">2022-06-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday02/" title="设计模式-day02"><img src="https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计模式-day02"/></a><div class="content"><a class="title" href="/2022/06/27/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8Fday02/" title="设计模式-day02">设计模式-day02</a><time datetime="2022-06-27T09:56:55.000Z" title="发表于 2022-06-27 17:56:55">2022-06-27</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://oss.lixiaoxu.cn/xixi/b3be458e28848ead9ef38d96e1f29d20.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 夕夕</div><div class="framework-info"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">京ICP备20027839号-3</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="/true" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'b6igpgZ6FCN9NgSDfijIo6gn-gzGzoHsz',
+      appKey: 'KlHWqUuKvYhALqtEJOTwXSzu',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a353580b8c298f3a4e5',
+      clientSecret: '2fd540ba8d938c2f241e606a84516db3077da2f2',
+      repo: 'mxxixi.github.io',
+      owner: 'mxxixi',
+      admin: ['mxxixi'],
+      id: '1e1aacddd21683c1fe375155fdb65de5',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Valine' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_clock_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://npm.elemecdn.com/hexo-butterfl  hexo cleany-clock/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_injector_config();
+  }
+  </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://npm.elemecdn.com/hexo-butterfly-clock/lib/clock.min.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>

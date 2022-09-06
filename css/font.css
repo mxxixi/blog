@@ -1,0 +1,33 @@
+@font-face{
+  font-family: 'ARLRDBD';
+  font-display: swap;
+  src: url('../font/ARLRDBD.TTF') format("truetype");
+}
+@font-face{
+  font-family: 'Brown Fox SC';
+  font-display: swap;
+  src: url('../font/Brown\ Fox.ttf') format("truetype");
+}
+@font-face{
+  font-family: 'COOPBL';
+  font-display: swap;
+  src: url('../font/COOPBL.TTF') format("truetype");
+}
+@font-face{
+  font-family: 'FORTE';
+  font-display: swap;
+  src: url('../font/FORTE.TTF') format("truetype");
+}
+@font-face{
+  font-family: 'HYLeMiaoTiJ';
+  font-display: swap;
+  src: url('../font/HYLeMiaoTiJ.ttf') format("truetype");
+}
+@font-face{
+  font-family: 'SudestadaFont';
+  font-display: swap;
+  src: url('../font/SudestadaFont.ttf') format("truetype");
+}
+body {
+  font-family: 'ARLRDBD','Brown Fox SC','COOPBL','FORTE','HYLeMiaoTiJ','SudestadaFont';
+}
