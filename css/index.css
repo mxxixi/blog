@@ -5073,7 +5073,7 @@ blockquote.pullquote.right {
 .toggle > .toggle-button {
   padding: 6px 15px;
   background: #f0f0f0;
-  color: #1f2d3d;
+  color: rgba(17,255,51,0.867);
   cursor: pointer;
 }
 .toggle > .toggle-content {
