@@ -689,8 +689,8 @@
     
     <entry>
       <title>ASM小助手卸载</title>
-      <link href="/blog/2022/03/23/1/"/>
-      <url>/blog/2022/03/23/1/</url>
+      <link href="/blog/2022/03/23/ASM/"/>
+      <url>/blog/2022/03/23/ASM/</url>
       
         <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>asm入网小助手是网络管理员用来审查网络中的计算机是否安全操作的应用程序。</p><p>这个软件通过控制面板卸载是需要管理员的验证码的。所以正常的方法可能无法进行删除。如图⬇<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1be030.png" alt="这是图片" title="1"></p><p>删除之前我们需要准备一个叫Ollydbg的软件。</p><p>下载地址<a href="">http://down.52pojie.cn/Tools/Debuggers/吾爱破解专用版Ollydbg.rar</a></p><h1 id="ASM如何卸载"><a href="#ASM如何卸载" class="headerlink" title="ASM如何卸载"></a>ASM如何卸载</h1><ol><li>打开任务管理器找到IsaHelp进程，然后右击打开文件所在位<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1be03d.png" alt="这是图片" title="2"></li><li>来到安装目录下我们可以看到有一个名为IsaSetup.exe的文件<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1bdfdb.png" alt="这是图片" title="3"></li><li>我们双击运行这个程序会弹出一个窗口，如图：<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1bdffa.jpg" alt="这是图片" title="4"></li><li>接下来用Ollydbg打开这个文件(Ollydbg需要管理员权限运行)<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1be013.jpg" alt="这是图片" title="5"></li><li>打开时要注意加上-remove参数<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be924.jpg" alt="这是图片" title="6"></li><li>打开后在主窗口右击进行查找参考文本，如图：<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be935.jpg" alt="这是图片" title="7"></li><li>然后拖动滚动条（往上）找到如下图所示的文字信息，并双击这一行<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be8ea.jpg" alt="这是图片" title="8"></li><li>双击会会跳转到主窗口，我们可以看到选中行上面有一条 jnz 指令<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be8f8.jpg" alt="这是图片" title="9"></li><li>双击这条指令后会弹出窗口在输入框里将jnz改为jz，并点击汇编按钮，点完按钮后窗口不会消失需要点取消。<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be905.jpg" alt="这是图片" title="10"></li><li>完成操作后会发现这一条变红了，jnz也变成了je<img src="https://pic.imgdb.cn/item/623ac33927f86abb2a1bf8e5.jpg" alt="这是图片" title="11"></li><li>接来下我们就可以按F9运行试一下了，经过几秒的等待果然出现了我们想要的结果<img src="https://pic.imgdb.cn/item/623ac33927f86abb2a1bf8fc.jpg" alt="这是图片" title="12"></li><li>点击确定就可以进行卸载咯~</li></ol>]]></content>
       
@@ -714,8 +714,8 @@
     
     <entry>
       <title>ASM小助手卸载</title>
-      <link href="/blog/2022/03/23/ASM/"/>
-      <url>/blog/2022/03/23/ASM/</url>
+      <link href="/blog/2022/03/23/1/"/>
+      <url>/blog/2022/03/23/1/</url>
       
         <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>asm入网小助手是网络管理员用来审查网络中的计算机是否安全操作的应用程序。</p><p>这个软件通过控制面板卸载是需要管理员的验证码的。所以正常的方法可能无法进行删除。如图⬇<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1be030.png" alt="这是图片" title="1"></p><p>删除之前我们需要准备一个叫Ollydbg的软件。</p><p>下载地址<a href="">http://down.52pojie.cn/Tools/Debuggers/吾爱破解专用版Ollydbg.rar</a></p><h1 id="ASM如何卸载"><a href="#ASM如何卸载" class="headerlink" title="ASM如何卸载"></a>ASM如何卸载</h1><ol><li>打开任务管理器找到IsaHelp进程，然后右击打开文件所在位<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1be03d.png" alt="这是图片" title="2"></li><li>来到安装目录下我们可以看到有一个名为IsaSetup.exe的文件<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1bdfdb.png" alt="这是图片" title="3"></li><li>我们双击运行这个程序会弹出一个窗口，如图：<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1bdffa.jpg" alt="这是图片" title="4"></li><li>接下来用Ollydbg打开这个文件(Ollydbg需要管理员权限运行)<img src="https://pic.imgdb.cn/item/623ac32d27f86abb2a1be013.jpg" alt="这是图片" title="5"></li><li>打开时要注意加上-remove参数<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be924.jpg" alt="这是图片" title="6"></li><li>打开后在主窗口右击进行查找参考文本，如图：<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be935.jpg" alt="这是图片" title="7"></li><li>然后拖动滚动条（往上）找到如下图所示的文字信息，并双击这一行<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be8ea.jpg" alt="这是图片" title="8"></li><li>双击会会跳转到主窗口，我们可以看到选中行上面有一条 jnz 指令<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be8f8.jpg" alt="这是图片" title="9"></li><li>双击这条指令后会弹出窗口在输入框里将jnz改为jz，并点击汇编按钮，点完按钮后窗口不会消失需要点取消。<img src="https://pic.imgdb.cn/item/623ac33127f86abb2a1be905.jpg" alt="这是图片" title="10"></li><li>完成操作后会发现这一条变红了，jnz也变成了je<img src="https://pic.imgdb.cn/item/623ac33927f86abb2a1bf8e5.jpg" alt="这是图片" title="11"></li><li>接来下我们就可以按F9运行试一下了，经过几秒的等待果然出现了我们想要的结果<img src="https://pic.imgdb.cn/item/623ac33927f86abb2a1bf8fc.jpg" alt="这是图片" title="12"></li><li>点击确定就可以进行卸载咯~</li></ol>]]></content>
       

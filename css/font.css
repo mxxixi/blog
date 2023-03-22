@@ -4,15 +4,10 @@
   src: url('../font/ARLRDBD.TTF') format("truetype");
 }
 @font-face{
-  font-family: 'Brown Fox SC';
-  font-display: swap;
-  src: url('../font/Brown\ Fox.ttf') format("truetype");
-}
-@font-face{
   font-family: 'COOPBL';
   font-display: swap;
   src: url('../font/COOPBL.TTF') format("truetype");
 }
 body {
-  font-family: 'ARLRDBD','Brown Fox SC','COOPBL';
+  font-family: 'ARLRDBD','COOPBL';
 }
